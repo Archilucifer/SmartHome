@@ -43,7 +43,7 @@ class UserCreate extends Command
         return Validator::make($data, [
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
+            'password' => 'required|string|min:6',
         ]);
     }
 
@@ -54,8 +54,12 @@ class UserCreate extends Command
      */
     public function handle()
     {
-        $validator = $this->validation($this->arguments());
-        return $validator->failed() ? User::create([
+        $validator = $this->validation([
+            'name' => $this->argument('name'),
+            'email' => $this->argument('email'),
+            'password' => $this->argument('password')
+        ]);
+        return !$validator->fails() ? User::create([
             'name' => $this->argument('name'),
             'email' => $this->argument('email'),
             'password' => bcrypt($this->argument('password')),
