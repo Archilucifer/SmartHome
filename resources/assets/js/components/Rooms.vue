@@ -22,7 +22,7 @@
     >
         <template>
           <v-form
-            method="post" action="/homeCreate" id="nativeForm"
+            method="post" v-bind:action="'roomCreate/' + homeId" id="nativeForm"
             ref="form"
             v-model="valid"
             lazy-validation
@@ -47,14 +47,6 @@
               name="type"
               required
             ></v-select>
-
-            <v-checkbox
-              v-model="checkbox"
-              label=" Main home ?"
-              :value="checkbox"
-              name="isMain"
-              required
-            ></v-checkbox>
 
             <v-btn
               :disabled="!valid"
@@ -85,7 +77,7 @@
     </v-overlay>
     </v-col>
     <v-col
-        v-for="(home, index) in data"
+        v-for="(room, index) in data"
     >
       <v-menu
         bottom
@@ -99,24 +91,23 @@
                 height = '90'
                 v-on="on"
            >
-                <i class="fas fa-home"></i>
+           <i
+                v-for="(value, name) in roomsImages"
+                v-if="name === room.type"
+                v-bind:class="value">
+           </i>
           </v-btn>
-              <span bottom class="white--text">{{ home.name }}</span>
+              <span bottom class="white--text">{{ room.name }}</span>
         </template>
         <v-card>
           <v-list-item-content class="justify-center">
             <div class=" text-center">
-                <span class="white--text headline">{{ home.name }}</span>
-              <h3>{{ home.userName }}</h3>
-              <p class="caption mt-1">
-                {{ home.userEmail }}
-              </p>
+                <span class="white--text headline">{{ room.type }}</span>
               <v-divider class="my-3"></v-divider>
               <v-btn
                 depressed
                 rounded
                 text
-                :href="'rooms/' + home.id"
               >
                 Go inside
               </v-btn>
@@ -149,23 +140,45 @@ padding-right: 10px
 <script>
     export default {
         name: 'HomeComponent',
-        props: ['data'],
+        props: ['data','homeId'],
         data: () => ({
               csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
               valid: true,
               name: '',
+              roomType: '',
               nameRules: [
                 v => !!v || 'Name is required',
                 v => (v && v.length <= 10) || 'Name must be less than 10 characters',
               ],
               types: null,
               types: [
-                'country',
-                'flat',
+                'BedRoom',
+                            'BathRoom',
+                            'LivingRoom',
+                            'Study',
+                            'Kitchen',
+                            'DiningRoom',
+                            'Hall',
+                            'Corridor',
+                            'Attic',
+                            'Garage',
+                            'Yard',
               ],
-              checkbox: false,
               overlay: false,
               zIndex: 0,
+              roomsImages:{
+                    BathRoom: 'fas fa-bath',
+                    BedRoom: 'fas fa-bed',
+                    LivingRoom: 'fas fa-couch',
+                    Study: 'fas fa-briefcase' ,
+                    Kitchen: 'fas fa-utensils' ,
+                     DiningRoom: 'fas fa-utensils' ,
+                     Hall: 'fas fa-tv' ,
+                     Corridor: 'fas fa-chair' ,
+                    Attic: 'fas fa-angle-up' ,
+                     Garage: 'fas fa-warehouse' ,
+                     Yard: 'fas fa-tree' ,
+                }
             }),
         methods: {
               validate () {
@@ -177,6 +190,15 @@ padding-right: 10px
               submit() {
                 nativeForm.submit()
               },
+            },
+            computed: {
+              iconClass: function () {
+                switch (this.roomType) {
+                  case 'BathRoom': return 'fas fa-bath'
+                  case 'BedRoom': return 'fas fa-bed'
+                  case 'LivingRoom': return 'fas fa-couch'
+                }
+              }
             }
     }
 </script>

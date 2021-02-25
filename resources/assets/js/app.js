@@ -20,6 +20,7 @@ Vue.use(Vuetify);
 
 Vue.component('example', require('./components/Example.vue'));
 Vue.component('home', require('./components/Home.vue'));
+Vue.component('rooms', require('./components/Rooms.vue'));
 
 const app = new Vue({
     el: '#app',
