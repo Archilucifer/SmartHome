@@ -19,3 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/homeCreate', 'HomeController@homeCreate')->name('homeCreate');
+
+Route::get('/rooms/{id}', 'RoomController@index')->name('rooms');
+Route::post('rooms/roomCreate/{id}', 'RoomController@roomCreate')->name('roomCreate');
