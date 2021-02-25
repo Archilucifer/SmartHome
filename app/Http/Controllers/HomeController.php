@@ -44,7 +44,6 @@ class HomeController extends Controller
 
         $this->home->create($params);
 
-        $homes = $this->home->getHousesByUserId(auth()->user()->id);
-        return view('home',['data'=>$homes]);
+        return back();
     }
 }

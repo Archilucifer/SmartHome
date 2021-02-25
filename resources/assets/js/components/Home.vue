@@ -116,7 +116,7 @@
                 depressed
                 rounded
                 text
-                v-bind:id = "home.id"
+                :href="'rooms/' + home.id"
               >
                 Go inside
               </v-btn>
@@ -125,7 +125,6 @@
                 depressed
                 rounded
                 text
-                v-bind:id = "home.id"
               >
                 Edit home
               </v-btn>
@@ -176,14 +175,8 @@ padding-right: 10px
                 this.$refs.form.reset()
               },
               submit() {
-                          nativeForm.submit()
-                        },
-
-              createHome () {
-                          axios.get('homeCreate', {params: {message: 'message',message2: 'message2'}}).then((response)=> {
-                              console.log(response);
-                          })
-                      },
+                nativeForm.submit()
+              },
             }
     }
 </script>
