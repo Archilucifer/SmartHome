@@ -30,7 +30,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $homes = $this->home->getHousesByUserId(auth()->user()->id);
+        $homes = $this->home->getHomesByUserId(auth()->user()->id);
         return view('home',['data'=>$homes]);
     }
 
