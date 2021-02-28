@@ -22,8 +22,21 @@ class Home extends Model
      * @param int $user_id
      * @return Home[]|Collection
      */
-    public function getHousesByUserId(int $user_id)
+    public function getHomesByUserId(int $user_id)
     {
         return $this->select(['id','name','type','owner'])->where('owner', $user_id)->get()->toArray();
+    }
+
+    /**
+     * @param int $user_id
+     * @return mixed
+     */
+    public function getMainHomeByUserId(int $user_id)
+    {
+        return $this->select('id')
+            ->where('owner',$user_id)
+            ->where('main',true)
+            ->get()
+            ->toArray()[0]['id'];
     }
 }
