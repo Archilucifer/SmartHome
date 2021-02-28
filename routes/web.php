@@ -18,7 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/homeCreate', 'HomeController@homeCreate')->name('homeCreate');
+Route::post('home/homeCreate', 'HomeController@homeCreate')->name('homeCreate');
 
 Route::get('/rooms/{id}', 'RoomController@index')->name('rooms');
 Route::post('rooms/roomCreate/{id}', 'RoomController@roomCreate')->name('roomCreate');
+
+Route::get('/devices', 'DeviceController@index')->name('device');
+Route::post('devices/deviceCreate', 'DeviceController@deviceCreate')->name('deviceCreate');
+Route::get('/scan/{homeId}', 'DeviceController@scan')->name('deviceScan');

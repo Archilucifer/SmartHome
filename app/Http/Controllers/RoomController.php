@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Room;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
 
 class RoomController extends Controller
 {
