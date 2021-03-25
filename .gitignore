@@ -1,3 +1,4 @@
+/app/data
 .env
 /node_modules
 /storage/*.key
