@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Home;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
-use PhpParser\Node\Stmt\Expression;
+use Illuminate\View\View;
 
 class HomeController extends Controller
 {
@@ -26,7 +28,7 @@ class HomeController extends Controller
     /**
      * Show the application dashboard.
      *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Foundation\Application|\Illuminate\View\View
+     * @return Factory|Application|View
      */
     public function index()
     {

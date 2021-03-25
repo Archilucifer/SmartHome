@@ -15965,7 +15965,7 @@ if (token) {
      * @returns {string} Returns the deburred string.
      * @example
      *
-     * _.deburr('dГ©jГ  vu');
+     * _.deburr('déjà vu');
      * // => 'deja vu'
      */
     function deburr(string) {
@@ -45465,7 +45465,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
         installMessageChannelImplementation();
 
     } else if (doc && "onreadystatechange" in doc.createElement("script")) {
-        // For IE 6вЂ“8
+        // For IE 6–8
         installReadyStateChangeImplementation();
 
     } else {
@@ -55501,7 +55501,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
       })]);
     },
     genPaginationInfo: function genPaginationInfo() {
-      var children = ['вЂ“'];
+      var children = ['–'];
       var itemsLength = this.pagination.itemsLength;
       var pageStart = this.pagination.pageStart;
       var pageStop = this.pagination.pageStop;
@@ -79572,66 +79572,66 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'ШґШ§Ш±Ш©',
-  close: 'ШҐШєЩ„Ш§Щ‚',
+  badge: 'شارة',
+  close: 'إغلاق',
   dataIterator: {
-    noResultsText: 'Щ„Ш§ ШЄЩ€Ш¬ШЇ ШіШ¬Щ„Ш§ШЄ Щ…Ш·Ш§ШЁЩ‚Ш©',
-    loadingText: 'ШЄШ­Щ…ЩЉЩ„ Ш§Щ„Ш№Щ†ШµШ±...'
+    noResultsText: 'لا توجد سجلات مطابقة',
+    loadingText: 'تحميل العنصر...'
   },
   dataTable: {
-    itemsPerPageText: 'Ш§Щ„ШµЩЃЩ€ЩЃ Щ„ЩѓЩ„ ШµЩЃШ­Ш©:',
+    itemsPerPageText: 'الصفوف لكل صفحة:',
     ariaLabel: {
-      sortDescending: 'Щ…ЩЃШ±Щ€ШІ ШЄЩ†Ш§ШІЩ„ЩЉ. ШЄЩ†ШґЩЉШ· Щ„ШҐШІШ§Щ„Ш© Ш§Щ„ЩЃШ±ШІ.',
-      sortAscending: 'Щ…ЩЃШ±Щ€ШІ ШЄШµШ§Ш№ШЇЩЉ. ШЄЩ†ШґЩЉШ· Щ„Щ„ЩЃШ±ШІ Ш§Щ„ШЄЩ†Ш§ШІЩ„ЩЉ.',
-      sortNone: 'ШєЩЉШ± Щ…ЩЃШ±Щ€ШІШ©. ШЄЩЃШ№ЩЉЩ„ Щ„ЩЃШ±ШІ ШЄШµШ§Ш№ШЇЩЉ.',
+      sortDescending: 'مفروز تنازلي. تنشيط لإزالة الفرز.',
+      sortAscending: 'مفروز تصاعدي. تنشيط للفرز التنازلي.',
+      sortNone: 'غير مفروزة. تفعيل لفرز تصاعدي.',
       activateNone: 'Activate to remove sorting.',
       activateDescending: 'Activate to sort descending.',
       activateAscending: 'Activate to sort ascending.'
     },
-    sortBy: 'Щ…ЩЃШ±Щ€ШІШ© Ш­ШіШЁ'
+    sortBy: 'مفروزة حسب'
   },
   dataFooter: {
-    itemsPerPageText: 'Ш§Щ„Ш№Щ†Ш§ШµШ± Щ„ЩѓЩ„ ШµЩЃШ­Ш©:',
-    itemsPerPageAll: 'Ш§Щ„ЩѓЩ„',
-    nextPage: 'Ш§Щ„ШµЩЃШ­Ш© Ш§Щ„ШЄШ§Щ„ЩЉШ©',
-    prevPage: 'Ш§Щ„ШµЩЃШ­Ш© Ш§Щ„ШіШ§ШЁЩ‚Ш©',
-    firstPage: 'Ш§Щ„ШµЩЃШ­Ш© Ш§Щ„ШЈЩ€Щ„Щ‰',
-    lastPage: 'Ш§Щ„ШµЩЃШ­Ш© Ш§Щ„ШЈШ®ЩЉШ±Ш©',
-    pageText: '{0}-{1} Щ…Щ† {2}'
+    itemsPerPageText: 'العناصر لكل صفحة:',
+    itemsPerPageAll: 'الكل',
+    nextPage: 'الصفحة التالية',
+    prevPage: 'الصفحة السابقة',
+    firstPage: 'الصفحة الأولى',
+    lastPage: 'الصفحة الأخيرة',
+    pageText: '{0}-{1} من {2}'
   },
   datePicker: {
-    itemsSelected: '{0} Щ…Ш®ШЄШ§Ш±Ш©',
-    nextMonthAriaLabel: 'Ш§Щ„ШґЩ‡Ш± Ш§Щ„Щ‚Ш§ШЇЩ…',
-    nextYearAriaLabel: 'Ш§Щ„Ш№Ш§Щ… Ш§Щ„Щ‚Ш§ШЇЩ…',
-    prevMonthAriaLabel: 'Ш§Щ„ШґЩ‡Ш± Ш§Щ„Щ…Ш§Ш¶Щ‰',
-    prevYearAriaLabel: 'Ш§Щ„ШіЩ†Ш© Ш§Щ„Щ…Ш§Ш¶ЩЉШ©'
+    itemsSelected: '{0} مختارة',
+    nextMonthAriaLabel: 'الشهر القادم',
+    nextYearAriaLabel: 'العام القادم',
+    prevMonthAriaLabel: 'الشهر الماضى',
+    prevYearAriaLabel: 'السنة الماضية'
   },
-  noDataText: 'Щ„Ш§ ШЄЩ€Ш¬ШЇ ШЁЩЉШ§Щ†Ш§ШЄ Щ…ШЄШ§Ш­Ш©',
+  noDataText: 'لا توجد بيانات متاحة',
   carousel: {
-    prev: 'Ш§Щ„ШЁШµШ±ЩЉ Ш§Щ„ШіШ§ШЁЩ‚',
-    next: 'Ш§Щ„ШЁШµШ±ЩЉ Ш§Щ„ШЄШ§Щ„ЩЉ',
+    prev: 'البصري السابق',
+    next: 'البصري التالي',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
   },
   calendar: {
-    moreEvents: '{0} ШЈЩѓШ«Ш±'
+    moreEvents: '{0} أكثر'
   },
   fileInput: {
-    counter: '{0} Щ…Щ„ЩЃШ§ШЄ',
-    counterSize: '{0} Щ…Щ„ЩЃШ§ШЄ ({1} ЩЃЩЉ Ш§Щ„Щ…Ш¬Щ…Щ€Ш№)'
+    counter: '{0} ملفات',
+    counterSize: '{0} ملفات ({1} في المجموع)'
   },
   timePicker: {
-    am: 'ШµШЁШ§Ш­Ш§Щ‹',
-    pm: 'Щ…ШіШ§ШЎЩ‹'
+    am: 'صباحاً',
+    pm: 'مساءً'
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'ШЄШ±Щ‚ЩЉЩ… Ш§Щ„ШµЩЃШ­Ш§ШЄ Ш§Щ„Щ…Щ„Ш§Ш­Ш©',
-      next: 'Ш§Щ„ШµЩЃШ­Ш© Ш§Щ„ШЄШ§Щ„ЩЉШ©',
-      previous: 'Ш§Щ„ШµЩЃШ­Ш© Ш§Щ„ШіШ§ШЁЩ‚Ш©',
-      page: '{0} Ш§Щ†ШЄЩ‚Щ„ ШҐЩ„Щ‰ ШµЩЃШ­Ш©',
-      currentPage: '{0} Ш§Щ„ШµЩЃШ­Ш© Ш§Щ„Ш­Ш§Щ„ЩЉШ© ШЊ Ш§Щ„ШµЩЃШ­Ш©'
+      wrapper: 'ترقيم الصفحات الملاحة',
+      next: 'الصفحة التالية',
+      previous: 'الصفحة السابقة',
+      page: '{0} انتقل إلى صفحة',
+      currentPage: '{0} الصفحة الحالية ، الصفحة'
     }
   },
   rating: {
@@ -79653,54 +79653,54 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'niЕџan',
-  close: 'BaДџla',
+  badge: 'nişan',
+  close: 'Bağla',
   dataIterator: {
-    noResultsText: 'UyДџun mЙ™lumat tapД±lmadД±',
-    loadingText: 'YГјklЙ™nir... ZЙ™hmЙ™t olmasa, gГ¶zlЙ™yin.'
+    noResultsText: 'Uyğun məlumat tapılmadı',
+    loadingText: 'Yüklənir... Zəhmət olmasa, gözləyin.'
   },
   dataTable: {
-    itemsPerPageText: 'SЙ™hifЙ™ baЕџД± sЙ™tir sayД±:',
+    itemsPerPageText: 'Səhifə başı sətir sayı:',
     ariaLabel: {
-      sortDescending: 'Azalan sД±ra ilЙ™ dГјzГјlmГјЕџ.',
-      sortAscending: 'Artan sД±ra ilЙ™ dГјzГјlmГјЕџ.',
-      sortNone: 'SД±ralanmamД±ЕџdД±r. ',
-      activateNone: 'SД±ralamanД± yД±ДџД±ЕџdД±r.',
-      activateDescending: 'Azalan sД±ra ilЙ™ dГјz.',
-      activateAscending: 'Artan sД±ra ilЙ™ dГјz.'
+      sortDescending: 'Azalan sıra ilə düzülmüş.',
+      sortAscending: 'Artan sıra ilə düzülmüş.',
+      sortNone: 'Sıralanmamışdır. ',
+      activateNone: 'Sıralamanı yığışdır.',
+      activateDescending: 'Azalan sıra ilə düz.',
+      activateAscending: 'Artan sıra ilə düz.'
     },
-    sortBy: 'SД±rala'
+    sortBy: 'Sırala'
   },
   dataFooter: {
-    itemsPerPageText: 'SЙ™hifЙ™ baЕџД± sЙ™tir sayД±:',
-    itemsPerPageAll: 'HamД±sД±',
-    nextPage: 'NГ¶vbЙ™ti sЙ™hifЙ™',
-    prevPage: 'ЖЏvvЙ™lki sЙ™hifЙ™',
-    firstPage: 'Д°lk sЙ™hifЙ™',
-    lastPage: 'Son sЙ™hifЙ™',
-    pageText: '{0} - {1} arasД±, CЙ™mi: {2} qeydiyyat'
+    itemsPerPageText: 'Səhifə başı sətir sayı:',
+    itemsPerPageAll: 'Hamısı',
+    nextPage: 'Növbəti səhifə',
+    prevPage: 'Əvvəlki səhifə',
+    firstPage: 'İlk səhifə',
+    lastPage: 'Son səhifə',
+    pageText: '{0} - {1} arası, Cəmi: {2} qeydiyyat'
   },
   datePicker: {
-    itemsSelected: '{0} element seГ§ildi',
-    nextMonthAriaLabel: 'NГ¶vbЙ™ti ay',
-    nextYearAriaLabel: 'NГ¶vbЙ™ti yД±l',
-    prevMonthAriaLabel: 'KeГ§Й™n ay',
-    prevYearAriaLabel: 'KeГ§Й™n yД±l'
+    itemsSelected: '{0} element seçildi',
+    nextMonthAriaLabel: 'Növbəti ay',
+    nextYearAriaLabel: 'Növbəti yıl',
+    prevMonthAriaLabel: 'Keçən ay',
+    prevYearAriaLabel: 'Keçən yıl'
   },
-  noDataText: 'Bu gГ¶rГјntГјdЙ™ mЙ™lumat yoxdur.',
+  noDataText: 'Bu görüntüdə məlumat yoxdur.',
   carousel: {
-    prev: 'ЖЏvvЙ™lki gГ¶rГјntГј',
-    next: 'NГ¶vbЙ™ti gГ¶rГјntГј',
+    prev: 'Əvvəlki görüntü',
+    next: 'Növbəti görüntü',
     ariaLabel: {
-      delimiter: 'Galereya sЙ™hifЙ™ {0} / {1}'
+      delimiter: 'Galereya səhifə {0} / {1}'
     }
   },
   calendar: {
-    moreEvents: '{0} Й™dad daha'
+    moreEvents: '{0} ədad daha'
   },
   fileInput: {
     counter: '{0} fayl',
-    counterSize: '{0} fayl (cЙ™mi {1})'
+    counterSize: '{0} fayl (cəmi {1})'
   },
   timePicker: {
     am: 'AM',
@@ -79708,11 +79708,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'SЙ™hifЙ™lЙ™mЙ™ NaviqasiyasД±',
-      next: 'NГ¶vbЙ™ti sЙ™hifЙ™',
-      previous: 'ЖЏvЙ™vlki sЙ™hifЙ™',
-      page: 'SЙ™hifЙ™yЙ™ get {0}',
-      currentPage: 'Cari sЙ™hifЙ™, SЙ™hifЙ™ {0}'
+      wrapper: 'Səhifələmə Naviqasiyası',
+      next: 'Növbəti səhifə',
+      previous: 'Əvəvlki səhifə',
+      page: 'Səhifəyə get {0}',
+      currentPage: 'Cari səhifə, Səhifə {0}'
     }
   },
   rating: {
@@ -79734,54 +79734,54 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'Р—РЅР°С‡РєР°',
-  close: 'Р—Р°С‚РІРѕСЂРё',
+  badge: 'Значка',
+  close: 'Затвори',
   dataIterator: {
-    noResultsText: 'РќРµ СЃР° РЅР°РјРµСЂРµРЅРё Р·Р°РїРёСЃРё',
-    loadingText: 'Р—Р°СЂРµР¶РґР°РЅРµ РЅР° РµР»РµРјРµРЅС‚Рё...'
+    noResultsText: 'Не са намерени записи',
+    loadingText: 'Зареждане на елементи...'
   },
   dataTable: {
-    itemsPerPageText: 'Р РµРґРѕРІРµ РЅР° СЃС‚СЂР°РЅРёС†Р°:',
+    itemsPerPageText: 'Редове на страница:',
     ariaLabel: {
-      sortDescending: 'РџРѕРґСЂРµРґРё РІ РЅР°РјР°Р»СЏРІР°С‰ СЂРµРґ.',
-      sortAscending: 'РџРѕРґСЂРµРґРё РІ РЅР°СЂР°СЃС‚РІР°С‰ СЂРµРґ.',
-      sortNone: 'Р‘РµР· РїРѕРґСЂРµРґР±Р°.',
-      activateNone: 'РђРєС‚РёРІРёСЂР°Р№ Р·Р° РїСЂРµРјР°С…РІР°РЅРµ РЅР° РїРѕРґСЂРµРґР±Р°С‚Р°.',
-      activateDescending: 'РђРєС‚РёРІРёСЂР°Р№ Р·Р° РїРѕРґСЂРµРґР±Р° РІ РЅР°РјР°Р»СЏРІР°С‰ СЂРµРґ.',
-      activateAscending: 'РђРєС‚РёРІРёСЂР°Р№ Р·Р° РїРѕРґСЂРµРґР±Р° РІ РЅР°СЂР°СЃС‚РІР°С‰ СЂРµРґ.'
+      sortDescending: 'Подреди в намаляващ ред.',
+      sortAscending: 'Подреди в нарастващ ред.',
+      sortNone: 'Без подредба.',
+      activateNone: 'Активирай за премахване на подредбата.',
+      activateDescending: 'Активирай за подредба в намаляващ ред.',
+      activateAscending: 'Активирай за подредба в нарастващ ред.'
     },
-    sortBy: 'РЎРѕСЂС‚РёСЂР°Р№ РїРѕ'
+    sortBy: 'Сортирай по'
   },
   dataFooter: {
-    itemsPerPageText: 'Р•Р»РµРјРµРЅС‚Рё РЅР° СЃС‚СЂР°РЅРёС†Р°:',
-    itemsPerPageAll: 'Р’СЃРёС‡РєРё',
-    nextPage: 'РЎР»РµРґРІР°С‰Р° СЃС‚СЂР°РЅРёС†Р°',
-    prevPage: 'РџСЂРµРґРёС€РЅР° СЃС‚СЂР°РЅРёС†Р°',
-    firstPage: 'РџСЉСЂРІР° СЃС‚СЂР°РЅРёС†Р°',
-    lastPage: 'РџРѕСЃР»РµРґРЅР° СЃС‚СЂР°РЅРёС†Р°',
-    pageText: '{0}-{1} РѕС‚ {2}'
+    itemsPerPageText: 'Елементи на страница:',
+    itemsPerPageAll: 'Всички',
+    nextPage: 'Следваща страница',
+    prevPage: 'Предишна страница',
+    firstPage: 'Първа страница',
+    lastPage: 'Последна страница',
+    pageText: '{0}-{1} от {2}'
   },
   datePicker: {
-    itemsSelected: '{0} РёР·Р±СЂР°РЅРё',
-    nextMonthAriaLabel: 'РЎР»РµРґРІР°С‰ РјРµСЃРµС†',
-    nextYearAriaLabel: 'РЎР»РµРґРІР°С‰Р°С‚Р° РіРѕРґРёРЅР°',
-    prevMonthAriaLabel: 'РџСЂРµРґРёС€РµРЅ РјРµСЃРµС†',
-    prevYearAriaLabel: 'РџСЂРµРґРёС€РЅР° РіРѕРґРёРЅР°'
+    itemsSelected: '{0} избрани',
+    nextMonthAriaLabel: 'Следващ месец',
+    nextYearAriaLabel: 'Следващата година',
+    prevMonthAriaLabel: 'Предишен месец',
+    prevYearAriaLabel: 'Предишна година'
   },
-  noDataText: 'РќСЏРјР° РЅР°Р»РёС‡РЅРё РґР°РЅРЅРё',
+  noDataText: 'Няма налични данни',
   carousel: {
-    prev: 'РџСЂРµРґРёС€РЅР° РІРёР·СѓР°Р»РёР·Р°С†РёСЏ',
-    next: 'РЎР»РµРґРІР°С‰Р° РІРёР·СѓР°Р»РёР·Р°С†РёСЏ',
+    prev: 'Предишна визуализация',
+    next: 'Следваща визуализация',
     ariaLabel: {
-      delimiter: 'РљР°РґСЉСЂ {0} РѕС‚ {1} РЅР° РІСЉСЂС‚РµР»РµР¶РєР°С‚Р°'
+      delimiter: 'Кадър {0} от {1} на въртележката'
     }
   },
   calendar: {
-    moreEvents: 'РћС‰Рµ {0}'
+    moreEvents: 'Още {0}'
   },
   fileInput: {
-    counter: '{0} С„Р°Р№Р»Р°',
-    counterSize: '{0} С„Р°Р№Р»Р° ({1} РѕР±С‰Рѕ)'
+    counter: '{0} файла',
+    counterSize: '{0} файла ({1} общо)'
   },
   timePicker: {
     am: 'AM',
@@ -79789,11 +79789,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'РЎС‚СЂР°РЅРёС†РёСЂР°РЅРµ',
-      next: 'РЎР»РµРґРІР°С‰Р° СЃС‚СЂР°РЅРёС†Р°',
-      previous: 'РџСЂРµРґРёС€РЅР° СЃС‚СЂР°РЅРёС†Р°',
-      page: 'РћС‚РёРґРё РЅР° СЃС‚СЂР°РЅРёС†Р° {0}',
-      currentPage: 'РўРµРєСѓС‰Р° СЃС‚СЂР°РЅРёС†Р°, РЎС‚СЂР°РЅРёС†Р° {0}'
+      wrapper: 'Странициране',
+      next: 'Следваща страница',
+      previous: 'Предишна страница',
+      page: 'Отиди на страница {0}',
+      currentPage: 'Текуща страница, Страница {0}'
     }
   },
   rating: {
@@ -79815,16 +79815,16 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'InsГ­gnia',
+  badge: 'Insígnia',
   close: 'Tancar',
   dataIterator: {
     noResultsText: 'Sense dades per mostrar',
     loadingText: 'Carregant...'
   },
   dataTable: {
-    itemsPerPageText: 'Files per pГ gina:',
+    itemsPerPageText: 'Files per pàgina:',
     ariaLabel: {
-      sortDescending: 'Ordre descendent. Premi per treure la ordenaciГі.',
+      sortDescending: 'Ordre descendent. Premi per treure la ordenació.',
       sortAscending: 'Ordre ascendent. Premi per ordenar descendent.',
       sortNone: 'Sense ordenar. Premi per ordenar ascendent.',
       activateNone: 'Activate to remove sorting.',
@@ -79834,12 +79834,12 @@ __webpack_require__.r(__webpack_exports__);
     sortBy: 'Ordenat per'
   },
   dataFooter: {
-    itemsPerPageText: 'Elements per pГ gina:',
+    itemsPerPageText: 'Elements per pàgina:',
     itemsPerPageAll: 'Tot',
-    nextPage: 'PГ gina segГјent',
-    prevPage: 'PГ gina anterior',
-    firstPage: 'Primera pГ gina',
-    lastPage: 'Гљltima pГ gina',
+    nextPage: 'Pàgina següent',
+    prevPage: 'Pàgina anterior',
+    firstPage: 'Primera pàgina',
+    lastPage: 'Última pàgina',
     pageText: '{0}-{1} de {2}'
   },
   datePicker: {
@@ -79851,14 +79851,14 @@ __webpack_require__.r(__webpack_exports__);
   },
   noDataText: 'Sense dades',
   carousel: {
-    prev: 'VisualitzaciГі prГЁvia',
-    next: 'VisualitzaciГі segГјent',
+    prev: 'Visualització prèvia',
+    next: 'Visualització següent',
     ariaLabel: {
       delimiter: 'Diapositiva {0} of {1}'
     }
   },
   calendar: {
-    moreEvents: '{0} mГ©s'
+    moreEvents: '{0} més'
   },
   fileInput: {
     counter: '{0} fitxers',
@@ -79870,11 +79870,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'NavegaciГі de la pГ gina',
-      next: 'PГ gina segГјent',
-      previous: 'PГ gina anterior',
-      page: 'Ves a la pГ gina {0}',
-      currentPage: 'PГ gina actual, pГ gina {0}'
+      wrapper: 'Navegació de la pàgina',
+      next: 'Pàgina següent',
+      previous: 'Pàgina anterior',
+      page: 'Ves a la pàgina {0}',
+      currentPage: 'Pàgina actual, pàgina {0}'
     }
   },
   rating: {
@@ -79896,66 +79896,66 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'ШЁШ§Ш¬',
-  close: 'ШЇШ§Ш®ШіШЄЩ†',
+  badge: 'باج',
+  close: 'داخستن',
   dataIterator: {
-    noResultsText: 'Щ‡ЫЊЪ† ШЄЫ†Щ…Ш§Ш±ЫЋЪ©ЫЊ Щ‡Ш§Щ€ШЄШ§ Щ†Ы•ШЇЫ†ШІШ±Ш§ЫЊЫ•Щ€Ы•',
-    loadingText: 'ШЁШ§Ш±Ъ©Ш±ШЇЩ†ЫЊ Ш¦Ш§ЫЊШЄЩ…Ы•Ъ©Ш§Щ†...'
+    noResultsText: 'هیچ تۆمارێکی هاوتا نەدۆزرایەوە',
+    loadingText: 'بارکردنی ئایتمەکان...'
   },
   dataTable: {
-    itemsPerPageText: 'Ъ•ЫЊШІЫ•Ъ©Ш§Щ† ШЁЫ† Щ‡Ы•Ш± ЩѕЫ•Ъ•Ы•ЫЊЫ•Ъ©:',
+    itemsPerPageText: 'ڕیزەکان بۆ هەر پەڕەیەک:',
     ariaLabel: {
-      sortDescending: '.ШіЫ•Ш± ШЁЫ•Ш±Ы•Щ€ Ш®Щ€Ш§Ш± Ъ•ЫЊШІЪ©Ш±Ш§Щ€Ы•',
-      sortAscending: '.ШіЫ•Ш± ШЁЫ•Ш±Ы•Щ€ Ъ�Щ€Щ€Ш± Ъ•ЫЊШІЪ©Ш±Ш§Щ€Ы•',
-      sortNone: 'Ъ•ЫЊШІЩ†Ы•Ъ©Ш±Ш§Щ€Ы•.',
-      activateNone: 'Ъ†Ш§Щ„Ш§Ъ©Ъ©Ш±ШЇЩ† ШЁЫ† Щ„Ш§ШЁШ±ШЇЩ†ЫЊ Ъ•ЫЊШІЪ©Ш±ШЇЩ†.',
-      activateDescending: 'Ъ†Ш§Щ„Ш§Ъ©Ъ©Ш±ШЇЩ† ШЁЫ† Ъ•ЫЊШІЪ©Ш±ШЇЩ†ЫЊ ШіЫ•Ш±ШЁЫ•Ш±Ы•Щ€Ш®Щ€Ш§Ш±.',
-      activateAscending: 'Ъ†Ш§Щ„Ш§Ъ©Ъ©Ш±ШЇЩ† ШЁЫ† Ъ•ЫЊШІЪ©Ш±ШЇЩ†ЫЊ ШіЫ•Ш± ШЁЫ•Ш±Ы•Щ€ Ъ�Щ€Щ€Ш±.'
+      sortDescending: '.سەر بەرەو خوار ڕیزکراوە',
+      sortAscending: '.سەر بەرەو ژوور ڕیزکراوە',
+      sortNone: 'ڕیزنەکراوە.',
+      activateNone: 'چالاککردن بۆ لابردنی ڕیزکردن.',
+      activateDescending: 'چالاککردن بۆ ڕیزکردنی سەربەرەوخوار.',
+      activateAscending: 'چالاککردن بۆ ڕیزکردنی سەر بەرەو ژوور.'
     },
-    sortBy: 'Ъ•ЫЊШІЪ©Ш±ШЇЩ† ШЁЫ•ЩѕЫЋЫЊ'
+    sortBy: 'ڕیزکردن بەپێی'
   },
   dataFooter: {
-    itemsPerPageText: 'Ш¦Ш§ЫЊШЄЩ…Ы•Ъ©Ш§Щ† ШЁЫ† Щ‡Ы•Ш± ЩѕЫ•Ъ•Ы•ЫЊЫ•Ъ©:',
-    itemsPerPageAll: 'Щ‡Ы•Щ…Щ€Щ€ЫЊ',
-    nextPage: 'ЩѕЫ•Ъ•Ы•ЫЊ ШЇЩ€Ш§ШЄШ±',
-    prevPage: 'ЩѕЫ•Ъ•Ы•ЫЊ ЩѕЫЋШґЩ€Щ€',
-    firstPage: 'ЩѕЫ•Ъ•Ы•ЫЊ ЫЊЫ•Ъ©Ы•Щ…',
-    lastPage: 'ЩѕЫ•Ъ•Ы•ЫЊ Ъ©Ы†ШЄШ§ЫЊЫЊ',
-    pageText: '{0}-{1} Щ„Ы• {2}'
+    itemsPerPageText: 'ئایتمەکان بۆ هەر پەڕەیەک:',
+    itemsPerPageAll: 'هەمووی',
+    nextPage: 'پەڕەی دواتر',
+    prevPage: 'پەڕەی پێشوو',
+    firstPage: 'پەڕەی یەکەم',
+    lastPage: 'پەڕەی کۆتایی',
+    pageText: '{0}-{1} لە {2}'
   },
   datePicker: {
-    itemsSelected: '{0} ШЇЫ•ШіЩ†ЫЊШґШ§Щ†Ъ©Ш±Ш§Щ€Ы•',
-    nextMonthAriaLabel: 'Щ…Ш§Щ†ЪЇЫЊ ШЇШ§Щ‡Ш§ШЄЩ€Щ€',
-    nextYearAriaLabel: 'ШіШ§ЪµЫЊ ШЇШ§Щ‡Ш§ШЄЩ€Щ€',
-    prevMonthAriaLabel: 'Щ…Ш§Щ†ЪЇЫЊ ЩѕЫЋШґЩ€Щ€',
-    prevYearAriaLabel: 'ШіШ§ЪµЫЊ ЩѕЫЋШґЩ€Щ€'
+    itemsSelected: '{0} دەسنیشانکراوە',
+    nextMonthAriaLabel: 'مانگی داهاتوو',
+    nextYearAriaLabel: 'ساڵی داهاتوو',
+    prevMonthAriaLabel: 'مانگی پێشوو',
+    prevYearAriaLabel: 'ساڵی پێشوو'
   },
-  noDataText: 'Щ‡ЫЊЪ† ШЇШ§ШЄШ§ЫЊЫ•Ъ© ШЁЫ•Ш±ШЇЫ•ШіШЄ Щ†ЫЊЫ•',
+  noDataText: 'هیچ داتایەک بەردەست نیە',
   carousel: {
-    prev: 'ШЁЫЊЩ†Ш±Ш§Щ€ЫЊ ЩѕЫЋШґЩ€Щ€',
-    next: 'ШЁЫЊЩ†Ш±Ш§Щ€ЫЊ ШЇШ§Щ‡Ш§ШЄЩ€Щ€',
+    prev: 'بینراوی پێشوو',
+    next: 'بینراوی داهاتوو',
     ariaLabel: {
-      delimiter: 'ШіЩ„Ш§ЫЊШЇЫЊ Ъ©Ш§Ш±Ы†ШіЫЋЩ„ {0} Щ„Ы• {1}'
+      delimiter: 'سلایدی کارۆسێل {0} لە {1}'
     }
   },
   calendar: {
-    moreEvents: '{0} ШІЫЊШ§ШЄШ±'
+    moreEvents: '{0} زیاتر'
   },
   fileInput: {
-    counter: '{0} ЩЃШ§ЫЊЩ„',
-    counterSize: '{0} ЩЃШ§ЫЊЩ„ ({1} Щ„Ы• Ъ©Ы†ЫЊ ЪЇШґШЄЫЊ)'
+    counter: '{0} فایل',
+    counterSize: '{0} فایل ({1} لە کۆی گشتی)'
   },
   timePicker: {
-    am: 'ЩѕЫЋШґ Щ†ЫЊЩ€Ы•Ъ•Ы†Ъ�',
-    pm: 'ШЇЩ€Ш§ЫЊ Щ†ЫЊЩ€Ы•Ъ•Ы†Ъ�'
+    am: 'پێش نیوەڕۆژ',
+    pm: 'دوای نیوەڕۆژ'
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'Ъ•ЫЋЩ†ЫЊШґШ§Щ†ШЇЫ•Ш±ЫЊ ЩѕЫ•Ъ•Ы•ЪЇЫ†Ъ•Ъ©ЫЋ',
-      next: 'ЩѕЫ•Ъ•Ы•ЫЊ ШЇЩ€Ш§ШЄШ±',
-      previous: 'ЩѕЫ•Ъ•Ы•ЫЊ ЩѕЫЋШґЩ€Щ€',
-      page: 'ШЁЪ•Ы† ШЁЫ† ЩѕЫ•Ъ•Ы•ЫЊ {0}',
-      currentPage: 'ЩѕЫ•Ъ•Ы•ЫЊ Ш¦ЫЋШіШЄШ§ШЊ ЩѕЫ•Ъ•Ы•{0}'
+      wrapper: 'ڕێنیشاندەری پەڕەگۆڕکێ',
+      next: 'پەڕەی دواتر',
+      previous: 'پەڕەی پێشوو',
+      page: 'بڕۆ بۆ پەڕەی {0}',
+      currentPage: 'پەڕەی ئێستا، پەڕە{0}'
     }
   },
   rating: {
@@ -79978,53 +79978,53 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   badge: 'Odznak',
-  close: 'ZavЕ™Г­t',
+  close: 'Zavřít',
   dataIterator: {
-    noResultsText: 'Nenalezeny ЕѕГЎdnГ© zГЎznamy',
-    loadingText: 'NaДЌГ­tГЎm poloЕѕky...'
+    noResultsText: 'Nenalezeny žádné záznamy',
+    loadingText: 'Načítám položky...'
   },
   dataTable: {
-    itemsPerPageText: 'Е�ГЎdkЕЇ na strГЎnku:',
+    itemsPerPageText: 'Řádků na stránku:',
     ariaLabel: {
-      sortDescending: 'Е�azeno sestupnД›.',
-      sortAscending: 'Е�azeno vzestupnД›.',
-      sortNone: 'NeseЕ™azeno.',
-      activateNone: 'AktivovГЎnГ­m vypnete Е™azenГ­.',
-      activateDescending: 'AktivovГЎnГ­m se bude Е™adit sestupnД›.',
-      activateAscending: 'AktivovГЎnГ­m se bude Е™adit vzestupnД›.'
+      sortDescending: 'Řazeno sestupně.',
+      sortAscending: 'Řazeno vzestupně.',
+      sortNone: 'Neseřazeno.',
+      activateNone: 'Aktivováním vypnete řazení.',
+      activateDescending: 'Aktivováním se bude řadit sestupně.',
+      activateAscending: 'Aktivováním se bude řadit vzestupně.'
     },
-    sortBy: 'Е�adit dle'
+    sortBy: 'Řadit dle'
   },
   dataFooter: {
-    itemsPerPageText: 'PoloЕѕek na strГЎnku:',
-    itemsPerPageAll: 'VЕЎe',
-    nextPage: 'DalЕЎГ­ strana',
-    prevPage: 'PЕ™edchozГ­ strana',
-    firstPage: 'PrvnГ­ strana',
-    lastPage: 'PoslednГ­ strana',
+    itemsPerPageText: 'Položek na stránku:',
+    itemsPerPageAll: 'Vše',
+    nextPage: 'Další strana',
+    prevPage: 'Předchozí strana',
+    firstPage: 'První strana',
+    lastPage: 'Poslední strana',
     pageText: '{0}-{1} z {2}'
   },
   datePicker: {
-    itemsSelected: '{0} vybrГЎno',
-    nextMonthAriaLabel: 'PЕ™Г­ЕЎtГ­ mД›sГ­c',
-    nextYearAriaLabel: 'PЕ™Г­ЕЎtГ­ rok',
-    prevMonthAriaLabel: 'PЕ™edchozГ­ mД›sГ­c',
-    prevYearAriaLabel: 'PЕ™edchozГ­ rok'
+    itemsSelected: '{0} vybráno',
+    nextMonthAriaLabel: 'Příští měsíc',
+    nextYearAriaLabel: 'Příští rok',
+    prevMonthAriaLabel: 'Předchozí měsíc',
+    prevYearAriaLabel: 'Předchozí rok'
   },
-  noDataText: 'Nejsou dostupnГЎ ЕѕГЎdnГЎ data',
+  noDataText: 'Nejsou dostupná žádná data',
   carousel: {
-    prev: 'PЕ™edchozГ­ obrГЎzek',
-    next: 'DalЕЎГ­ obrГЎzek',
+    prev: 'Předchozí obrázek',
+    next: 'Další obrázek',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
   },
   calendar: {
-    moreEvents: '{0} dalЕЎГ­ch'
+    moreEvents: '{0} dalších'
   },
   fileInput: {
-    counter: '{0} souborЕЇ',
-    counterSize: '{0} souborЕЇ ({1} celkem)'
+    counter: '{0} souborů',
+    counterSize: '{0} souborů ({1} celkem)'
   },
   timePicker: {
     am: 'AM',
@@ -80032,11 +80032,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'Navigace strГЎnkovГЎnГ­',
-      next: 'DalЕЎГ­ strana',
-      previous: 'PЕ™edchozГ­ strana',
-      page: 'PЕ™ejГ­t na strГЎnku {0}',
-      currentPage: 'AktuГЎlnГ­ strГЎnka, strГЎnka {0}'
+      wrapper: 'Navigace stránkování',
+      next: 'Další strana',
+      previous: 'Předchozí strana',
+      page: 'Přejít na stránku {0}',
+      currentPage: 'Aktuální stránka, stránka {0}'
     }
   },
   rating: {
@@ -80059,7 +80059,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   badge: 'Abzeichen',
-  close: 'SchlieГџen',
+  close: 'Schließen',
   dataIterator: {
     noResultsText: 'Keine Elemente gefunden',
     loadingText: 'Lade Elemente...'
@@ -80079,23 +80079,23 @@ __webpack_require__.r(__webpack_exports__);
   dataFooter: {
     itemsPerPageText: 'Elemente pro Seite:',
     itemsPerPageAll: 'Alle',
-    nextPage: 'NГ¤chste Seite',
+    nextPage: 'Nächste Seite',
     prevPage: 'Vorherige Seite',
     firstPage: 'Erste Seite',
     lastPage: 'Letzte Seite',
     pageText: '{0}-{1} von {2}'
   },
   datePicker: {
-    itemsSelected: '{0} ausgewГ¤hlt',
-    nextMonthAriaLabel: 'NГ¤chsten Monat',
-    nextYearAriaLabel: 'NГ¤chstes Jahr',
+    itemsSelected: '{0} ausgewählt',
+    nextMonthAriaLabel: 'Nächsten Monat',
+    nextYearAriaLabel: 'Nächstes Jahr',
     prevMonthAriaLabel: 'Vorheriger Monat',
     prevYearAriaLabel: 'Vorheriges Jahr'
   },
   noDataText: 'Keine Daten vorhanden',
   carousel: {
     prev: 'Vorheriges Bild',
-    next: 'NГ¤chstes Bild',
+    next: 'Nächstes Bild',
     ariaLabel: {
       delimiter: 'Element {0} von {1}'
     }
@@ -80114,7 +80114,7 @@ __webpack_require__.r(__webpack_exports__);
   pagination: {
     ariaLabel: {
       wrapper: 'Seitennavigation',
-      next: 'NГ¤chste Seite',
+      next: 'Nächste Seite',
       previous: 'Vorherige Seite',
       page: 'Gehe zu Seite {0}',
       currentPage: 'Aktuelle Seite, Seite {0}'
@@ -80139,14 +80139,14 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'ОЈО®ОјО±',
+  badge: 'Σήμα',
   close: 'Close',
   dataIterator: {
-    noResultsText: 'О”Оµ ОІПЃО­ОёО·ОєО±ОЅ О±ПЂОїП„ОµО»О­ПѓОјО±П„О±',
+    noResultsText: 'Δε βρέθηκαν αποτελέσματα',
     loadingText: 'Loading item...'
   },
   dataTable: {
-    itemsPerPageText: 'О“ПЃО±ОјОјО­П‚ О±ОЅО¬ ПѓОµО»ОЇОґО±:',
+    itemsPerPageText: 'Γραμμές ανά σελίδα:',
     ariaLabel: {
       sortDescending: 'Sorted descending.',
       sortAscending: 'Sorted ascending.',
@@ -80158,31 +80158,31 @@ __webpack_require__.r(__webpack_exports__);
     sortBy: 'Sort by'
   },
   dataFooter: {
-    itemsPerPageText: 'О‘ОЅП„О№ОєОµОЇОјОµОЅО± О±ОЅО¬ ПѓОµО»ОЇОґО±:',
-    itemsPerPageAll: 'ОЊО»О±',
-    nextPage: 'О•ПЂПЊОјОµОЅО· ПѓОµО»ОЇОґО±',
-    prevPage: 'О ПЃОїО·ОіОїПЌОјОµОЅО· ПѓОµО»ОЇОґО±',
-    firstPage: 'О ПЃПЋП„О· ПѓОµО»ОЇОґО±',
-    lastPage: 'О¤ОµО»ОµП…П„О±ОЇО± ПѓОµО»ОЇОґО±',
-    pageText: '{0}-{1} О±ПЂПЊ {2}'
+    itemsPerPageText: 'Αντικείμενα ανά σελίδα:',
+    itemsPerPageAll: 'Όλα',
+    nextPage: 'Επόμενη σελίδα',
+    prevPage: 'Προηγούμενη σελίδα',
+    firstPage: 'Πρώτη σελίδα',
+    lastPage: 'Τελευταία σελίδα',
+    pageText: '{0}-{1} από {2}'
   },
   datePicker: {
-    itemsSelected: '{0} ОµПЂО№О»ОµОіОјО­ОЅО±',
-    nextMonthAriaLabel: 'О¤ОїОЅ ОµПЂПЊОјОµОЅОї ОјО®ОЅО±',
-    nextYearAriaLabel: 'О¤ОїП… П‡ПЃПЊОЅОїП…',
-    prevMonthAriaLabel: 'О ПЃОїО·ОіОїПЌОјОµОЅОїП‚ ОјО®ОЅО±П‚',
-    prevYearAriaLabel: 'О ПЃОїО·ОіОїПЌОјОµОЅОї О­П„ОїП‚'
+    itemsSelected: '{0} επιλεγμένα',
+    nextMonthAriaLabel: 'Τον επόμενο μήνα',
+    nextYearAriaLabel: 'Του χρόνου',
+    prevMonthAriaLabel: 'Προηγούμενος μήνας',
+    prevYearAriaLabel: 'Προηγούμενο έτος'
   },
-  noDataText: 'О§П‰ПЃОЇП‚ ОґОµОґОїОјО­ОЅО±',
+  noDataText: 'Χωρίς δεδομένα',
   carousel: {
-    prev: 'Ч”Ч§Ч•Ч“Чќ Ч—Ч–Ч•ЧЄЧ™',
-    next: 'Ч”Ч‘Чђ Ч—Ч–Ч•ЧЄЧ™',
+    prev: 'הקודם חזותי',
+    next: 'הבא חזותי',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
   },
   calendar: {
-    moreEvents: '{0} О±ОєПЊОјО·'
+    moreEvents: '{0} ακόμη'
   },
   fileInput: {
     counter: '{0} files',
@@ -80194,11 +80194,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'О О»ОїО®ОіО·ПѓО· ОјОµ ПЂПЃОїОїПЃО№ПѓОјОїПЌП‚',
-      next: 'О•ПЂПЊОјОµОЅО· ПѓОµО»ОЇОґО±',
-      previous: 'О ПЃОїО·ОіОїПЌОјОµОЅО· ПѓОµО»ОЇОґО±',
-      page: 'О О®ОіО±О№ОЅОµ ПѓП„О·ОЅ ПѓОµО»ОЇОґО± {0}',
-      currentPage: 'О¤ПЃО­П‡ОїП…ПѓО± ПѓОµО»ОЇОґО±, ПѓОµО»ОЇОґО± {0}'
+      wrapper: 'Πλοήγηση με προορισμούς',
+      next: 'Επόμενη σελίδα',
+      previous: 'Προηγούμενη σελίδα',
+      page: 'Πήγαινε στην σελίδα {0}',
+      currentPage: 'Τρέχουσα σελίδα, σελίδα {0}'
     }
   },
   rating: {
@@ -80304,11 +80304,11 @@ __webpack_require__.r(__webpack_exports__);
   badge: 'Placa',
   close: 'Cerrar',
   dataIterator: {
-    noResultsText: 'NingГєn elemento coincide con la bГєsqueda',
+    noResultsText: 'Ningún elemento coincide con la búsqueda',
     loadingText: 'Cargando...'
   },
   dataTable: {
-    itemsPerPageText: 'Filas por pГЎgina:',
+    itemsPerPageText: 'Filas por página:',
     ariaLabel: {
       sortDescending: 'Orden descendente.',
       sortAscending: 'Orden ascendente.',
@@ -80320,20 +80320,20 @@ __webpack_require__.r(__webpack_exports__);
     sortBy: 'Ordenado por'
   },
   dataFooter: {
-    itemsPerPageText: 'Elementos por pГЎgina:',
+    itemsPerPageText: 'Elementos por página:',
     itemsPerPageAll: 'Todos',
-    nextPage: 'PГЎgina siguiente',
-    prevPage: 'PГЎgina anterior',
-    firstPage: 'Primer pГЎgina',
-    lastPage: 'Гљltima pГЎgina',
+    nextPage: 'Página siguiente',
+    prevPage: 'Página anterior',
+    firstPage: 'Primer página',
+    lastPage: 'Última página',
     pageText: '{0}-{1} de {2}'
   },
   datePicker: {
     itemsSelected: '{0} seleccionados',
-    nextMonthAriaLabel: 'PrГіximo mes',
-    nextYearAriaLabel: 'PrГіximo aГ±o',
+    nextMonthAriaLabel: 'Próximo mes',
+    nextYearAriaLabel: 'Próximo año',
     prevMonthAriaLabel: 'Mes anterior',
-    prevYearAriaLabel: 'AГ±o anterior'
+    prevYearAriaLabel: 'Año anterior'
   },
   noDataText: 'No hay datos disponibles',
   carousel: {
@@ -80344,7 +80344,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   calendar: {
-    moreEvents: '{0} mГЎs'
+    moreEvents: '{0} más'
   },
   fileInput: {
     counter: '{0} archivos',
@@ -80356,11 +80356,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'NavegaciГіn de paginaciГіn',
-      next: 'PГЎgina siguiente',
-      previous: 'PГЎgina anterior',
-      page: 'Ir a la pГЎgina {0}',
-      currentPage: 'PГЎgina actual, pГЎgina {0}'
+      wrapper: 'Navegación de paginación',
+      next: 'Página siguiente',
+      previous: 'Página anterior',
+      page: 'Ir a la página {0}',
+      currentPage: 'Página actual, página {0}'
     }
   },
   rating: {
@@ -80382,14 +80382,14 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'MГ¤rk',
+  badge: 'Märk',
   close: 'Sulge',
   dataIterator: {
     noResultsText: 'Vastavaid kirjeid ei leitud',
     loadingText: 'Andmeid laaditakse...'
   },
   dataTable: {
-    itemsPerPageText: 'Ridu lehekГјljel:',
+    itemsPerPageText: 'Ridu leheküljel:',
     ariaLabel: {
       sortDescending: 'Kahanevalt sorteeritud.',
       sortAscending: 'Kasvavalt sorteeritud.',
@@ -80401,25 +80401,25 @@ __webpack_require__.r(__webpack_exports__);
     sortBy: 'Sorteerimise alus'
   },
   dataFooter: {
-    itemsPerPageText: 'Kirjeid lehekГјljel:',
-    itemsPerPageAll: 'KГµik',
-    nextPage: 'JГ¤rgmine lehekГјlg',
-    prevPage: 'Eelmine lehekГјlg',
-    firstPage: 'Esimene lehekГјlg',
-    lastPage: 'Viimane lehekГјlg',
+    itemsPerPageText: 'Kirjeid leheküljel:',
+    itemsPerPageAll: 'Kõik',
+    nextPage: 'Järgmine lehekülg',
+    prevPage: 'Eelmine lehekülg',
+    firstPage: 'Esimene lehekülg',
+    lastPage: 'Viimane lehekülg',
     pageText: '{0}-{1} {2}st'
   },
   datePicker: {
     itemsSelected: '{0} valitud',
-    nextMonthAriaLabel: 'JГ¤rgmine kuu',
-    nextYearAriaLabel: 'JГ¤rgmine aasta',
+    nextMonthAriaLabel: 'Järgmine kuu',
+    nextYearAriaLabel: 'Järgmine aasta',
     prevMonthAriaLabel: 'Eelmine kuu',
     prevYearAriaLabel: 'Eelmine aasta'
   },
   noDataText: 'Andmed puuduvad',
   carousel: {
     prev: 'Eelmine visuaalne',
-    next: 'JГ¤rgmine visuaalne',
+    next: 'Järgmine visuaalne',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
@@ -80438,8 +80438,8 @@ __webpack_require__.r(__webpack_exports__);
   pagination: {
     ariaLabel: {
       wrapper: 'Pagination Navigation',
-      next: 'JГ¤rgmine lehekГјlg',
-      previous: 'Eelmine lehekГјlg',
+      next: 'Järgmine lehekülg',
+      previous: 'Eelmine lehekülg',
       page: 'Mine lehele {0}',
       currentPage: 'Praegune leht, leht {0}'
     }
@@ -80463,66 +80463,66 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'Щ†ШґШ§Щ†',
-  close: 'ШЁШіШЄЩ†',
+  badge: 'نشان',
+  close: 'بستن',
   dataIterator: {
-    noResultsText: 'Щ†ШЄЫЊШ¬Щ‡вЂЊШ§ЫЊ ЫЊШ§ЩЃШЄ Щ†ШґШЇ',
-    loadingText: 'ШЇШ± Ш­Ш§Щ„ ШЁШ§Ш±ЪЇШ°Ш§Ш±ЫЊ...'
+    noResultsText: 'نتیجه‌ای یافت نشد',
+    loadingText: 'در حال بارگذاری...'
   },
   dataTable: {
-    itemsPerPageText: 'Ш±ШЇЫЊЩЃ ШЇШ± ШµЩЃШ­Щ‡:',
+    itemsPerPageText: 'ردیف در صفحه:',
     ariaLabel: {
-      sortDescending: 'Щ…Ш±ШЄШЁвЂЊШіШ§ШІЫЊ Щ†ШІЩ€Щ„ЫЊ',
-      sortAscending: 'Щ…Ш±ШЄШЁвЂЊШіШ§ШІЫЊ ШµШ№Щ€ШЇЫЊ',
-      sortNone: 'ШЁШЇЩ€Щ† Щ…Ш±ШЄШЁвЂЊШіШ§ШІЫЊ',
-      activateNone: 'ШєЫЊШ±ЩЃШ№Ш§Щ„вЂЊШіШ§ШІЫЊ Щ…Ш±ШЄШЁвЂЊШіШ§ШІЫЊ',
-      activateDescending: 'ШєЫЊШ±ЩЃШ№Ш§Щ„вЂЊШіШ§ШІЫЊ Щ…Ш±ШЄШЁвЂЊШіШ§ШІЫЊ Щ†ШІЩ€Щ„ЫЊ',
-      activateAscending: 'ШєЫЊШ±ЩЃШ№Ш§Щ„вЂЊШіШ§ШІЫЊ Щ…Ш±ШЄШЁвЂЊШіШ§ШІЫЊ ШµШ№Щ€ШЇЫЊ'
+      sortDescending: 'مرتب‌سازی نزولی',
+      sortAscending: 'مرتب‌سازی صعودی',
+      sortNone: 'بدون مرتب‌سازی',
+      activateNone: 'غیرفعال‌سازی مرتب‌سازی',
+      activateDescending: 'غیرفعال‌سازی مرتب‌سازی نزولی',
+      activateAscending: 'غیرفعال‌سازی مرتب‌سازی صعودی'
     },
-    sortBy: 'Щ…Ш±ШЄШЁвЂЊШіШ§ШІЫЊ ШЁШ±Ш§ШіШ§Ші'
+    sortBy: 'مرتب‌سازی براساس'
   },
   dataFooter: {
-    itemsPerPageText: 'Ш±ШЇЫЊЩЃ ШЇШ± ШµЩЃШ­Щ‡:',
-    itemsPerPageAll: 'Щ‡Щ…Щ‡',
-    nextPage: 'ШµЩЃШ­Щ‡вЂЊЫЊ ШЁШ№ШЇ',
-    prevPage: 'ШµЩЃШ­Щ‡вЂЊЫЊ Щ‚ШЁЩ„',
-    firstPage: 'ШµЩЃШ­Щ‡вЂЊЫЊ ЫЊЪ©Щ…',
-    lastPage: 'ШµЩЃШ­Щ‡вЂЊЫЊ ШўШ®Ш±',
-    pageText: '{0} ШЄШ§ {1} Ш§ШІ {2}'
+    itemsPerPageText: 'ردیف در صفحه:',
+    itemsPerPageAll: 'همه',
+    nextPage: 'صفحه‌ی بعد',
+    prevPage: 'صفحه‌ی قبل',
+    firstPage: 'صفحه‌ی یکم',
+    lastPage: 'صفحه‌ی آخر',
+    pageText: '{0} تا {1} از {2}'
   },
   datePicker: {
-    itemsSelected: '{0} Ш§Щ†ШЄШ®Ш§ШЁ ШґШЇЩ‡',
-    nextMonthAriaLabel: 'Щ…Ш§Щ‡ ШЁШ№ШЇ',
-    nextYearAriaLabel: 'ШіШ§Щ„ ШЁШ№ШЇ',
-    prevMonthAriaLabel: 'Щ…Ш§Щ‡ Щ‚ШЁЩ„',
-    prevYearAriaLabel: 'ШіШ§Щ„ Щ‚ШЁЩ„'
+    itemsSelected: '{0} انتخاب شده',
+    nextMonthAriaLabel: 'ماه بعد',
+    nextYearAriaLabel: 'سال بعد',
+    prevMonthAriaLabel: 'ماه قبل',
+    prevYearAriaLabel: 'سال قبل'
   },
-  noDataText: 'ШЇШ§ШЇЩ‡вЂЊШ§ЫЊ Щ…Щ€Ш¬Щ€ШЇ Щ†ЫЊШіШЄ',
+  noDataText: 'داده‌ای موجود نیست',
   carousel: {
-    prev: 'Ш§ШіЩ„Ш§ЫЊШЇ Щ‚ШЁЩ„ЫЊ',
-    next: 'Ш§ШіЩ„Ш§ЫЊШЇ ШЁШ№ШЇЫЊ',
+    prev: 'اسلاید قبلی',
+    next: 'اسلاید بعدی',
     ariaLabel: {
-      delimiter: 'Ш§ШіЩ„Ш§ЫЊШЇ {0} Ш§ШІ {1}'
+      delimiter: 'اسلاید {0} از {1}'
     }
   },
   calendar: {
-    moreEvents: '{ШЁЫЊШґШЄШ± {0'
+    moreEvents: '{بیشتر {0'
   },
   fileInput: {
-    counter: '{0} ЩѕШ±Щ€Щ†ШЇЩ‡',
-    counterSize: '{0} ЩѕШ±Щ€Щ†ШЇЩ‡ ({1} ШЇШ± Ъ©Щ„)'
+    counter: '{0} پرونده',
+    counterSize: '{0} پرونده ({1} در کل)'
   },
   timePicker: {
-    am: 'Щ‚ШЁЩ„ Ш§ШІ ШёЩ‡Ш±',
-    pm: 'ШЁШ№ШЇ Ш§ШІ ШёЩ‡Ш±'
+    am: 'قبل از ظهر',
+    pm: 'بعد از ظهر'
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'Ш¬Щ‡ШЄ ЫЊШ§ШЁЫЊ ШµЩЃШ­Щ‡',
-      next: 'ШµЩЃШ­Щ‡ ШЁШ№ШЇ',
-      previous: 'ШµЩЃШ­Щ‡ Щ‚ШЁЩ„ЫЊ',
-      page: 'ШЁШ±Щ€ ШµЩЃШ­Щ‡ {0}',
-      currentPage: '{0} ШµЩЃШ­Щ‡ ЩЃШ№Щ„ЫЊ ШЊ ШµЩЃШ­Щ‡'
+      wrapper: 'جهت یابی صفحه',
+      next: 'صفحه بعد',
+      previous: 'صفحه قبلی',
+      page: 'برو صفحه {0}',
+      currentPage: '{0} صفحه فعلی ، صفحه'
     }
   },
   rating: {
@@ -80551,23 +80551,23 @@ __webpack_require__.r(__webpack_exports__);
     loadingText: 'Ladataan kohteita...'
   },
   dataTable: {
-    itemsPerPageText: 'RivejГ¤ sivulla:',
+    itemsPerPageText: 'Rivejä sivulla:',
     ariaLabel: {
-      sortDescending: ': JГ¤rjestetty laskevasti. Poista jГ¤rjestГ¤minen aktivoimalla.',
-      sortAscending: ': JГ¤rjestetty nousevasti. JГ¤rjestГ¤ laskevasti aktivoimalla.',
-      sortNone: ': Ei jГ¤rjestetty. JГ¤rjestГ¤ nousevasti aktivoimalla.',
+      sortDescending: ': Järjestetty laskevasti. Poista järjestäminen aktivoimalla.',
+      sortAscending: ': Järjestetty nousevasti. Järjestä laskevasti aktivoimalla.',
+      sortNone: ': Ei järjestetty. Järjestä nousevasti aktivoimalla.',
       activateNone: 'Aktivoi lajittelun poistamiseksi.',
       activateDescending: 'Aktivoi laskevien laskevien lajittelemiseksi.',
       activateAscending: 'Aktivoi lajitella nouseva.'
     },
-    sortBy: 'JГ¤rjestГ¤'
+    sortBy: 'Järjestä'
   },
   dataFooter: {
     itemsPerPageText: 'Kohteita sivulla:',
     itemsPerPageAll: 'Kaikki',
     nextPage: 'Seuraava sivu',
     prevPage: 'Edellinen sivu',
-    firstPage: 'EnsimmГ¤inen sivu',
+    firstPage: 'Ensimmäinen sivu',
     lastPage: 'Viimeinen sivu',
     pageText: '{0}-{1} ({2})'
   },
@@ -80587,11 +80587,11 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   calendar: {
-    moreEvents: '{0} lisГ¤Г¤'
+    moreEvents: '{0} lisää'
   },
   fileInput: {
     counter: '{0} tiedostoa',
-    counterSize: '{0} tiedostoa ({1} yhteensГ¤)'
+    counterSize: '{0} tiedostoa ({1} yhteensä)'
   },
   timePicker: {
     am: 'ap.',
@@ -80628,40 +80628,40 @@ __webpack_require__.r(__webpack_exports__);
   badge: 'Badge',
   close: 'Fermer',
   dataIterator: {
-    noResultsText: 'Aucun enregistrement correspondant trouvГ©',
+    noResultsText: 'Aucun enregistrement correspondant trouvé',
     loadingText: "Chargement de l'\xE9l\xE9ment..."
   },
   dataTable: {
     itemsPerPageText: 'Lignes par page :',
     ariaLabel: {
-      sortDescending: 'Tri dГ©croissant.',
+      sortDescending: 'Tri décroissant.',
       sortAscending: 'Tri croissant.',
-      sortNone: 'Non triГ©.',
+      sortNone: 'Non trié.',
       activateNone: 'Activer pour supprimer le tri.',
-      activateDescending: 'Activer pour trier par ordre dГ©croissant.',
+      activateDescending: 'Activer pour trier par ordre décroissant.',
       activateAscending: 'Activer pour trier par ordre croissant.'
     },
     sortBy: 'Trier par'
   },
   dataFooter: {
-    itemsPerPageText: 'Г‰lements par page :',
+    itemsPerPageText: 'Élements par page :',
     itemsPerPageAll: 'Tous',
     nextPage: 'Page suivante',
-    prevPage: 'Page prГ©cГ©dente',
-    firstPage: 'PremiГЁre page',
-    lastPage: 'DerniГЁre page',
+    prevPage: 'Page précédente',
+    firstPage: 'Première page',
+    lastPage: 'Dernière page',
     pageText: '{0}-{1} de {2}'
   },
   datePicker: {
-    itemsSelected: '{0} sГ©lectionnГ©(s)',
+    itemsSelected: '{0} sélectionné(s)',
     nextMonthAriaLabel: 'Le mois prochain',
     nextYearAriaLabel: "L'ann\xE9e prochaine",
-    prevMonthAriaLabel: 'Le mois prГ©cГ©dent',
-    prevYearAriaLabel: 'AnnГ©e prГ©cГ©dente'
+    prevMonthAriaLabel: 'Le mois précédent',
+    prevYearAriaLabel: 'Année précédente'
   },
-  noDataText: 'Aucune donnГ©e disponible',
+  noDataText: 'Aucune donnée disponible',
   carousel: {
-    prev: 'Visuel prГ©cГ©dent',
+    prev: 'Visuel précédent',
     next: 'Visuel suivant',
     ariaLabel: {
       delimiter: 'Diapositive {0} de {1}'
@@ -80682,8 +80682,8 @@ __webpack_require__.r(__webpack_exports__);
     ariaLabel: {
       wrapper: 'Navigation de pagination',
       next: 'Page suivante',
-      previous: 'Page prГ©cГ©dente',
-      page: 'Aller Г  la page {0}',
+      previous: 'Page précédente',
+      page: 'Aller à la page {0}',
       currentPage: 'Page actuelle, Page {0}'
     }
   },
@@ -80706,54 +80706,54 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'ЧЄЧ’',
-  close: 'ЧЎЧ’Ч•ЧЁ',
+  badge: 'תג',
+  close: 'סגור',
   dataIterator: {
-    noResultsText: 'ЧњЧђ Ч ЧћЧ¦ЧђЧ• ЧЄЧ•Ч¦ЧђЧ•ЧЄ ЧћЧЄЧђЧ™ЧћЧ•ЧЄ',
-    loadingText: 'Ч�Ч•ЧўЧџ Ч¤ЧЁЧ™Ч�...'
+    noResultsText: 'לא נמצאו תוצאות מתאימות',
+    loadingText: 'טוען פריט...'
   },
   dataTable: {
-    itemsPerPageText: 'Ч©Ч•ЧЁЧ•ЧЄ ЧњЧўЧћЧ•Ч“:',
+    itemsPerPageText: 'שורות לעמוד:',
     ariaLabel: {
-      sortDescending: 'ЧћЧћЧ•Ч™Чџ ЧњЧ¤Ч™ ЧЎЧ“ЧЁ ЧўЧ•ЧњЧ”. ЧњЧ—ЧҐ ЧњЧ”ЧЎЧ¤Ч§ЧЄ Ч”ЧћЧ™Ч•Чџ.',
-      sortAscending: 'ЧћЧћЧ•Ч™Чџ ЧњЧ¤Ч™ ЧЎЧ“ЧЁ Ч™Ч•ЧЁЧ“. ЧњЧ—ЧҐ ЧњЧћЧ™Ч•Чџ ЧњЧ¤Ч™ ЧЎЧ“ЧЁ ЧўЧ•ЧњЧ”.',
-      sortNone: 'ЧњЧђ ЧћЧћЧ•Ч™Чџ. ЧњЧ—ЧҐ ЧњЧћЧ™Ч•Чџ ЧњЧ¤Ч™ ЧЎЧ“ЧЁ ЧўЧ•ЧњЧ”.',
-      activateNone: 'Ч”Ч¤ЧўЧњ ЧњЧ”ЧЎЧЁЧЄ Ч”ЧћЧ™Ч•Чџ.',
-      activateDescending: 'Ч”Ч¤ЧўЧњ ЧњЧћЧ™Ч•Чџ Ч™Ч•ЧЁЧ“.',
-      activateAscending: 'Ч”Ч¤ЧўЧњ ЧњЧћЧ™Ч•Чџ ЧўЧ•ЧњЧ”.'
+      sortDescending: 'ממוין לפי סדר עולה. לחץ להספקת המיון.',
+      sortAscending: 'ממוין לפי סדר יורד. לחץ למיון לפי סדר עולה.',
+      sortNone: 'לא ממוין. לחץ למיון לפי סדר עולה.',
+      activateNone: 'הפעל להסרת המיון.',
+      activateDescending: 'הפעל למיון יורד.',
+      activateAscending: 'הפעל למיון עולה.'
     },
-    sortBy: 'ЧЎЧ“ЧЁ ЧњЧ¤Ч™'
+    sortBy: 'סדר לפי'
   },
   dataFooter: {
-    itemsPerPageText: 'Ч¤ЧЁЧ™Ч�Ч™Чќ ЧњЧ“ЧЈ:',
-    itemsPerPageAll: 'Ч”Ч›Чњ',
-    nextPage: 'ЧўЧћЧ•Ч“ Ч”Ч‘Чђ',
-    prevPage: 'ЧўЧћЧ•Ч“ Ч”Ч§Ч•Ч“Чќ',
-    firstPage: 'ЧўЧћЧ•Ч“ ЧЁЧђЧ©Ч•Чџ',
-    lastPage: 'ЧўЧћЧ•Ч“ ЧђЧ—ЧЁЧ•Чџ',
-    pageText: '{0}-{1} ЧћЧЄЧ•Чљ {2}'
+    itemsPerPageText: 'פריטים לדף:',
+    itemsPerPageAll: 'הכל',
+    nextPage: 'עמוד הבא',
+    prevPage: 'עמוד הקודם',
+    firstPage: 'עמוד ראשון',
+    lastPage: 'עמוד אחרון',
+    pageText: '{0}-{1} מתוך {2}'
   },
   datePicker: {
-    itemsSelected: '{0} Ч Ч‘Ч—ЧЁЧ•',
-    nextMonthAriaLabel: 'Ч—Ч•Ч“Ч© Ч”Ч‘Чђ',
-    nextYearAriaLabel: 'Ч©Ч Ч” Ч”Ч‘ЧђЧ”',
-    prevMonthAriaLabel: 'Ч—Ч•Ч“Ч© Ч©ЧўЧ‘ЧЁ',
-    prevYearAriaLabel: 'Ч©Ч Ч” Ч©ЧўЧ‘ЧЁЧ”'
+    itemsSelected: '{0} נבחרו',
+    nextMonthAriaLabel: 'חודש הבא',
+    nextYearAriaLabel: 'שנה הבאה',
+    prevMonthAriaLabel: 'חודש שעבר',
+    prevYearAriaLabel: 'שנה שעברה'
   },
-  noDataText: 'ЧђЧ™Чџ Ч ЧЄЧ•Ч Ч™Чќ Ч–ЧћЧ™Ч Ч™Чќ',
+  noDataText: 'אין נתונים זמינים',
   carousel: {
-    prev: 'ЧћЧ¦Ч’ Ч§Ч•Ч“Чќ',
-    next: 'ЧћЧ¦Ч’ Ч”Ч‘Чђ',
+    prev: 'מצג קודם',
+    next: 'מצג הבא',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
   },
   calendar: {
-    moreEvents: '{0} Ч Ч•ЧЎЧ¤Ч™Чќ'
+    moreEvents: '{0} נוספים'
   },
   fileInput: {
-    counter: '{0} Ч§Ч‘Ч¦Ч™Чќ',
-    counterSize: '{0} Ч§Ч‘Ч¦Ч™Чќ ({1} Ч‘ЧЎЧљ Ч”Ч›Чњ)'
+    counter: '{0} קבצים',
+    counterSize: '{0} קבצים ({1} בסך הכל)'
   },
   timePicker: {
     am: 'AM',
@@ -80761,11 +80761,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'Ч Ч™Ч•Ч•Ч� ЧўЧ™ЧћЧ•Ч“',
-      next: 'ЧўЧћЧ•Ч“ Ч”Ч‘Чђ',
-      previous: 'ЧўЧћЧ•Ч“ Ч”Ч§Ч•Ч“Чќ',
-      page: '{0} ЧњЧљ ЧњЧўЧћЧ•Ч“',
-      currentPage: '{0} ЧўЧћЧ•Ч“ Ч Ч•Ч›Ч—Ч™, ЧўЧћЧ•Ч“'
+      wrapper: 'ניווט עימוד',
+      next: 'עמוד הבא',
+      previous: 'עמוד הקודם',
+      page: '{0} לך לעמוד',
+      currentPage: '{0} עמוד נוכחי, עמוד'
     }
   },
   rating: {
@@ -80787,11 +80787,11 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'BedЕѕ',
+  badge: 'Bedž',
   close: 'Zatvori',
   dataIterator: {
-    noResultsText: 'Nisu pronaД‘ene odgovarajuД‡e stavke',
-    loadingText: 'UДЌitavanje...'
+    noResultsText: 'Nisu pronađene odgovarajuće stavke',
+    loadingText: 'Učitavanje...'
   },
   dataTable: {
     itemsPerPageText: 'Redaka po stranici:',
@@ -80808,7 +80808,7 @@ __webpack_require__.r(__webpack_exports__);
   dataFooter: {
     itemsPerPageText: 'Stavki po stranici:',
     itemsPerPageAll: 'Sve',
-    nextPage: 'SljedeД‡a stranica',
+    nextPage: 'Sljedeća stranica',
     prevPage: 'Prethodna stranica',
     firstPage: 'Prva stranica',
     lastPage: 'Posljednja stranica',
@@ -80816,21 +80816,21 @@ __webpack_require__.r(__webpack_exports__);
   },
   datePicker: {
     itemsSelected: '{0} odabrano',
-    nextMonthAriaLabel: 'SljedeД‡i mjesec',
-    nextYearAriaLabel: 'SlijedeД‡e godine',
+    nextMonthAriaLabel: 'Sljedeći mjesec',
+    nextYearAriaLabel: 'Slijedeće godine',
     prevMonthAriaLabel: 'Prethodni mjesec',
-    prevYearAriaLabel: 'ProЕЎla godina'
+    prevYearAriaLabel: 'Prošla godina'
   },
   noDataText: 'Nema dostupnih podataka',
   carousel: {
     prev: 'Prethodno',
-    next: 'SljedeД‡e',
+    next: 'Sljedeće',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
   },
   calendar: {
-    moreEvents: 'JoЕЎ {0}'
+    moreEvents: 'Još {0}'
   },
   fileInput: {
     counter: 'Odabranih datoteka: {0}',
@@ -80843,7 +80843,7 @@ __webpack_require__.r(__webpack_exports__);
   pagination: {
     ariaLabel: {
       wrapper: 'Navigacija stranicama',
-      next: 'SljedeД‡a stranica',
+      next: 'Sljedeća stranica',
       previous: 'Prethodna stranica',
       page: 'Idi na stranicu {0}',
       currentPage: 'Trenutna stranica, stranica {0}'
@@ -80868,54 +80868,54 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'JelvГ©ny',
-  close: 'BezГЎrГЎs',
+  badge: 'Jelvény',
+  close: 'Bezárás',
   dataIterator: {
-    noResultsText: 'Nincs egyezЕ‘ talГЎlat',
-    loadingText: 'BetГ¶ltГ©s...'
+    noResultsText: 'Nincs egyező találat',
+    loadingText: 'Betöltés...'
   },
   dataTable: {
-    itemsPerPageText: 'Elem oldalankГ©nt:',
+    itemsPerPageText: 'Elem oldalanként:',
     ariaLabel: {
-      sortDescending: 'CsГ¶kkenЕ‘ sorrendbe rendezve.',
-      sortAscending: 'NГ¶vekvЕ‘ sorrendbe rendezve.',
+      sortDescending: 'Csökkenő sorrendbe rendezve.',
+      sortAscending: 'Növekvő sorrendbe rendezve.',
       sortNone: 'Rendezetlen.',
-      activateNone: 'RendezГ©s tГ¶rlГ©se.',
-      activateDescending: 'AktivГЎld a csГ¶kkenЕ‘ rendezГ©sГ©rt.',
-      activateAscending: 'AktivГЎld a nГ¶vekvЕ‘ rendezГ©sГ©rt.'
+      activateNone: 'Rendezés törlése.',
+      activateDescending: 'Aktiváld a csökkenő rendezésért.',
+      activateAscending: 'Aktiváld a növekvő rendezésért.'
     },
-    sortBy: 'RendezГ©s'
+    sortBy: 'Rendezés'
   },
   dataFooter: {
-    itemsPerPageText: 'Elem oldalankГ©nt:',
+    itemsPerPageText: 'Elem oldalanként:',
     itemsPerPageAll: 'Mind',
-    nextPage: 'KГ¶vetkezЕ‘ oldal',
-    prevPage: 'ElЕ‘zЕ‘ oldal',
-    firstPage: 'ElsЕ‘ oldal',
-    lastPage: 'UtolsГі oldal',
+    nextPage: 'Következő oldal',
+    prevPage: 'Előző oldal',
+    firstPage: 'Első oldal',
+    lastPage: 'Utolsó oldal',
     pageText: '{0}-{1} / {2}'
   },
   datePicker: {
-    itemsSelected: '{0} kivГЎlasztva',
-    nextMonthAriaLabel: 'KГ¶vetkezЕ‘ hГіnap',
-    nextYearAriaLabel: 'KГ¶vetkezЕ‘ Г©v',
-    prevMonthAriaLabel: 'ElЕ‘zЕ‘ hГіnap',
-    prevYearAriaLabel: 'ElЕ‘zЕ‘ Г©v'
+    itemsSelected: '{0} kiválasztva',
+    nextMonthAriaLabel: 'Következő hónap',
+    nextYearAriaLabel: 'Következő év',
+    prevMonthAriaLabel: 'Előző hónap',
+    prevYearAriaLabel: 'Előző év'
   },
-  noDataText: 'Nincs elГ©rhetЕ‘ adat',
+  noDataText: 'Nincs elérhető adat',
   carousel: {
-    prev: 'ElЕ‘zЕ‘',
-    next: 'KГ¶vetkezЕ‘',
+    prev: 'Előző',
+    next: 'Következő',
     ariaLabel: {
       delimiter: 'Dia {0}/{1}'
     }
   },
   calendar: {
-    moreEvents: '{0} tovГЎbbi'
+    moreEvents: '{0} további'
   },
   fileInput: {
-    counter: '{0} fГЎjl',
-    counterSize: '{0} fГЎjl ({1} Г¶sszesen)'
+    counter: '{0} fájl',
+    counterSize: '{0} fájl ({1} összesen)'
   },
   timePicker: {
     am: 'de',
@@ -80923,11 +80923,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'Oldal navigГЎciГі',
-      next: 'KГ¶vetkezЕ‘ oldal',
-      previous: 'ElЕ‘zЕ‘ oldal',
+      wrapper: 'Oldal navigáció',
+      next: 'Következő oldal',
+      previous: 'Előző oldal',
       page: 'Menj a(z) {0}. oldalra',
-      currentPage: 'AktuГЎlis oldal: {0}'
+      currentPage: 'Aktuális oldal: {0}'
     }
   },
   rating: {
@@ -81241,7 +81241,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   calendar: {
-    moreEvents: '{0} di piГ№'
+    moreEvents: '{0} di più'
   },
   fileInput: {
     counter: '{0} files',
@@ -81279,54 +81279,54 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'гѓђгѓѓг‚ё',
-  close: 'й–‰гЃ�г‚‹',
+  badge: 'バッジ',
+  close: '閉じる',
   dataIterator: {
-    noResultsText: 'ж¤њзґўзµђжћњгЃЊи¦‹гЃ¤гЃ‹г‚ЉгЃѕгЃ›г‚“гЂ‚',
-    loadingText: 'й …з›®г‚’гѓ­гѓјгѓ‰дё­гЃ§гЃ™...'
+    noResultsText: '検索結果が見つかりません。',
+    loadingText: '項目をロード中です...'
   },
   dataTable: {
-    itemsPerPageText: '1гѓљгѓјг‚ёгЃ‚гЃџг‚ЉгЃ®иЎЊж•°пјљ',
+    itemsPerPageText: '1ページあたりの行数：',
     ariaLabel: {
-      sortDescending: 'й™Ќй †гЃ®дё¦гЃіж›їгЃ€гЂ‚',
-      sortAscending: 'ж�‡й †гЃ®дё¦гЃіж›їгЃ€гЂ‚',
-      sortNone: 'г‚Ѕгѓјгѓ€гЃ•г‚ЊгЃ¦гЃ„гЃѕгЃ›г‚“гЂ‚',
-      activateNone: 'г‚Ѕгѓјгѓ€г‚’е‰Љй™¤гЃ™г‚‹гЃ«гЃЇжњ‰еЉ№гЃ«гЃ—гЃ¦гЃЏгЃ гЃ•гЃ„гЂ‚',
-      activateDescending: 'й™Ќй †гЃ®дё¦гЃіж›їгЃ€гЃ®гЃџг‚ЃгЃ«гЃЇжњ‰еЉ№гЃ«гЃ—гЃ¦гЃЏгЃ гЃ•гЃ„гЂ‚',
-      activateAscending: 'ж�‡й †гЃ®г‚Ѕгѓјгѓ€гЃ®гЃџг‚ЃгЃ«гЃЇжњ‰еЉ№гЃ«гЃ—гЃ¦гЃЏгЃ гЃ•гЃ„гЂ‚'
+      sortDescending: '降順の並び替え。',
+      sortAscending: '昇順の並び替え。',
+      sortNone: 'ソートされていません。',
+      activateNone: 'ソートを削除するには有効にしてください。',
+      activateDescending: '降順の並び替えのためには有効にしてください。',
+      activateAscending: '昇順のソートのためには有効にしてください。'
     },
-    sortBy: 'г‚Ѕгѓјгѓ€ж–№ејЏ'
+    sortBy: 'ソート方式'
   },
   dataFooter: {
-    itemsPerPageText: '1гѓљгѓјг‚ёгЃ‚гЃџг‚ЉгЃ®д»¶ж•°пјљ',
-    itemsPerPageAll: 'гЃ™гЃ№гЃ¦',
-    nextPage: 'ж¬ЎгЃ®гѓљгѓјг‚ё',
-    prevPage: 'е‰ЌгЃ®гѓљгѓјг‚ё',
-    firstPage: 'жњЂе€ќгЃ®гѓљгѓјг‚ё',
-    lastPage: 'жњЂеѕЊгЃ®гѓљгѓјг‚ё',
-    pageText: '{0}-{1} д»¶з›® / {2}д»¶'
+    itemsPerPageText: '1ページあたりの件数：',
+    itemsPerPageAll: 'すべて',
+    nextPage: '次のページ',
+    prevPage: '前のページ',
+    firstPage: '最初のページ',
+    lastPage: '最後のページ',
+    pageText: '{0}-{1} 件目 / {2}件'
   },
   datePicker: {
-    itemsSelected: '{0}ж—Ґд»�йЃёжЉћ',
-    nextMonthAriaLabel: 'жќҐжњ€',
-    nextYearAriaLabel: 'жќҐе№ґ',
-    prevMonthAriaLabel: 'е‰Ќжњ€',
-    prevYearAriaLabel: 'е‰Ќе№ґ'
+    itemsSelected: '{0}日付選択',
+    nextMonthAriaLabel: '来月',
+    nextYearAriaLabel: '来年',
+    prevMonthAriaLabel: '前月',
+    prevYearAriaLabel: '前年'
   },
-  noDataText: 'гѓ‡гѓјг‚їгЃЇгЃ‚г‚ЉгЃѕгЃ›г‚“гЂ‚',
+  noDataText: 'データはありません。',
   carousel: {
-    prev: 'е‰ЌгЃ®гѓ“г‚ёгѓҐг‚ўгѓ«',
-    next: 'ж¬ЎгЃ®гѓ“г‚ёгѓҐг‚ўгѓ«',
+    prev: '前のビジュアル',
+    next: '次のビジュアル',
     ariaLabel: {
-      delimiter: 'г‚«гѓ«гѓјг‚»гѓ«гЃ®г‚№гѓ©г‚¤гѓ‰ {0}д»¶з›® / {1}д»¶'
+      delimiter: 'カルーセルのスライド {0}件目 / {1}件'
     }
   },
   calendar: {
-    moreEvents: 'гЃ•г‚‰гЃ«{0}'
+    moreEvents: 'さらに{0}'
   },
   fileInput: {
-    counter: '{0} гѓ•г‚Ўг‚¤гѓ«',
-    counterSize: '{0} гѓ•г‚Ўг‚¤гѓ« (еђ€иЁ€ {1})'
+    counter: '{0} ファイル',
+    counterSize: '{0} ファイル (合計 {1})'
   },
   timePicker: {
     am: 'AM',
@@ -81334,11 +81334,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'гѓљгѓјг‚ёгѓЌгѓјг‚·гѓ§гѓігѓЉгѓ“г‚Ігѓјг‚·гѓ§гѓі',
-      next: 'ж¬ЎгЃ®гѓљгѓјг‚ё',
-      previous: 'е‰ЌгЃ®гѓљгѓјг‚ё',
-      page: '{0}гѓљгѓјг‚ёз›®гЃ«з§»е‹•',
-      currentPage: 'зЏѕењЁгЃ®гѓљгѓјг‚ёгЂЃгѓљгѓјг‚ё {0}'
+      wrapper: 'ページネーションナビゲーション',
+      next: '次のページ',
+      previous: '前のページ',
+      page: '{0}ページ目に移動',
+      currentPage: '現在のページ、ページ {0}'
     }
   },
   rating: {
@@ -81360,66 +81360,66 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'л°°м§Ђ',
-  close: 'л‹«кё°',
+  badge: '배지',
+  close: '닫기',
   dataIterator: {
-    noResultsText: 'мќјм№�н•�лЉ” н•­лЄ©мќґ м—†мЉµл‹€л‹¤.',
-    loadingText: 'л¶€лџ¬м�¤лЉ” м¤‘...'
+    noResultsText: '일치하는 항목이 없습니다.',
+    loadingText: '불러오는 중...'
   },
   dataTable: {
-    itemsPerPageText: 'нЋ�мќґм§Ђ л‹№ н–‰ м€�:',
+    itemsPerPageText: '페이지 당 행 수:',
     ariaLabel: {
-      sortDescending: 'л‚ґл¦јм°Ём€њ м •л ¬.',
-      sortAscending: 'м�¤л¦„м°Ём€њ м •л ¬.',
-      sortNone: 'м •л ¬н•�м§Ђ м•ЉмќЊ.',
-      activateNone: 'м •л ¬мќ„ м·Ём†Њн•�л ¤л©ґ н™њм„±н™”н•�м„ёмљ”.',
-      activateDescending: 'л‚ґл¦јм°Ём€њ м •л ¬мќ„ мњ„н•ґ н™њм„±н™”н•�м„ёмљ”.',
-      activateAscending: 'м�¤л¦„м°Ём€њ м •л ¬мќ„ мњ„н•ґ н™њм„±н™”н•�м„ёмљ”.'
+      sortDescending: '내림차순 정렬.',
+      sortAscending: '오름차순 정렬.',
+      sortNone: '정렬하지 않음.',
+      activateNone: '정렬을 취소하려면 활성화하세요.',
+      activateDescending: '내림차순 정렬을 위해 활성화하세요.',
+      activateAscending: '오름차순 정렬을 위해 활성화하세요.'
     },
     sortBy: 'Sort by'
   },
   dataFooter: {
-    itemsPerPageText: 'нЋ�мќґм§Ђ л‹№ н•­лЄ© м€�:',
-    itemsPerPageAll: 'м „мІґ',
-    nextPage: 'л‹¤мќЊ нЋ�мќґм§Ђ',
-    prevPage: 'мќґм „ нЋ�мќґм§Ђ',
-    firstPage: 'мІ« нЋ�мќґм§Ђ',
-    lastPage: 'л§€м§Ђл§‰ нЋ�мќґм§Ђ',
-    pageText: '{2} м¤‘ {0}-{1}'
+    itemsPerPageText: '페이지 당 항목 수:',
+    itemsPerPageAll: '전체',
+    nextPage: '다음 페이지',
+    prevPage: '이전 페이지',
+    firstPage: '첫 페이지',
+    lastPage: '마지막 페이지',
+    pageText: '{2} 중 {0}-{1}'
   },
   datePicker: {
-    itemsSelected: '{0} м„ нѓќлђЁ',
-    nextMonthAriaLabel: 'л‹¤мќЊ л‹¬',
-    nextYearAriaLabel: 'л‚ґл…„',
-    prevMonthAriaLabel: 'м§Ђл‚њл‹¬',
-    prevYearAriaLabel: 'м „л…„лЏ„'
+    itemsSelected: '{0} 선택됨',
+    nextMonthAriaLabel: '다음 달',
+    nextYearAriaLabel: '내년',
+    prevMonthAriaLabel: '지난달',
+    prevYearAriaLabel: '전년도'
   },
-  noDataText: 'лЌ°мќґн„°к°Ђ м—†мЉµл‹€л‹¤.',
+  noDataText: '데이터가 없습니다.',
   carousel: {
-    prev: 'мќґм „ н™”л©ґ',
-    next: 'л‹¤мќЊ н™”л©ґ',
+    prev: '이전 화면',
+    next: '다음 화면',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
   },
   calendar: {
-    moreEvents: '{0} лЌ”ліґкё°'
+    moreEvents: '{0} 더보기'
   },
   fileInput: {
     counter: '{0} files',
     counterSize: '{0} files ({1} in total)'
   },
   timePicker: {
-    am: 'м�¤м „',
-    pm: 'м�¤н›„'
+    am: '오전',
+    pm: '오후'
   },
   pagination: {
     ariaLabel: {
       wrapper: 'Pagination Navigation',
-      next: 'л‹¤мќЊ нЋ�мќґм§Ђ',
-      previous: 'мќґм „ нЋ�мќґм§Ђ',
-      page: 'кі н†  нЋ�мќґм§Ђ {0}',
-      currentPage: 'н�„мћ¬ нЋ�мќґм§Ђ, нЋ�мќґм§Ђ {0}'
+      next: '다음 페이지',
+      previous: '이전 페이지',
+      page: '고토 페이지 {0}',
+      currentPage: '현재 페이지, 페이지 {0}'
     }
   },
   rating: {
@@ -81441,44 +81441,44 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'ЕЅenklelis',
-  close: 'UЕѕdaryti',
+  badge: 'Ženklelis',
+  close: 'Uždaryti',
   dataIterator: {
-    noResultsText: 'Nerasta atitinkanДЌiЕі ДЇraЕЎЕі',
+    noResultsText: 'Nerasta atitinkančių įrašų',
     loadingText: 'Kraunama...'
   },
   dataTable: {
-    itemsPerPageText: 'EilutД—s per puslapДЇ:',
+    itemsPerPageText: 'Eilutės per puslapį:',
     ariaLabel: {
-      sortDescending: 'IЕЎrikiuota maЕѕД—jimo tvarka.',
-      sortAscending: 'IЕЎrikiuota didД—jimo tvarka.',
+      sortDescending: 'Išrikiuota mažėjimo tvarka.',
+      sortAscending: 'Išrikiuota didėjimo tvarka.',
       sortNone: 'Nerikiuota.',
-      activateNone: 'Suaktyvinkite, jei norite rikiavimД… paЕЎalinti.',
-      activateDescending: 'Suaktyvinkite, jei norite rikiuoti maЕѕД—jimo tvarka.',
-      activateAscending: 'Suaktyvinkite, jei norite rikiuoti didД—jimo tvarka.'
+      activateNone: 'Suaktyvinkite, jei norite rikiavimą pašalinti.',
+      activateDescending: 'Suaktyvinkite, jei norite rikiuoti mažėjimo tvarka.',
+      activateAscending: 'Suaktyvinkite, jei norite rikiuoti didėjimo tvarka.'
     },
     sortBy: 'Sort by'
   },
   dataFooter: {
-    itemsPerPageText: 'Д®raЕЎai per puslapДЇ:',
+    itemsPerPageText: 'Įrašai per puslapį:',
     itemsPerPageAll: 'Visi',
     nextPage: 'Kitas puslapis',
     prevPage: 'Ankstesnis puslapis',
     firstPage: 'Pirmas puslapis',
     lastPage: 'Paskutinis puslapis',
-    pageText: '{0}-{1} iЕЎ {2}'
+    pageText: '{0}-{1} iš {2}'
   },
   datePicker: {
     itemsSelected: '{0} pasirinkta',
-    nextMonthAriaLabel: 'KitД… mД—nesДЇ',
+    nextMonthAriaLabel: 'Kitą mėnesį',
     nextYearAriaLabel: 'Kitais metais',
-    prevMonthAriaLabel: 'Praeita mД—nesДЇ',
+    prevMonthAriaLabel: 'Praeita mėnesį',
     prevYearAriaLabel: 'Praeiti metai'
   },
-  noDataText: 'NД—ra duomenЕі',
+  noDataText: 'Nėra duomenų',
   carousel: {
-    prev: 'Ankstesnioji skaidrД—',
-    next: 'Kita skaidrД—',
+    prev: 'Ankstesnioji skaidrė',
+    next: 'Kita skaidrė',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
@@ -81487,8 +81487,8 @@ __webpack_require__.r(__webpack_exports__);
     moreEvents: 'Daugiau {0}'
   },
   fileInput: {
-    counter: '{0} failЕі',
-    counterSize: '{0} failЕі ({1} iЕЎ viso)'
+    counter: '{0} failų',
+    counterSize: '{0} failų ({1} iš viso)'
   },
   timePicker: {
     am: 'AM',
@@ -81496,10 +81496,10 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'Puslapio narЕЎymas',
+      wrapper: 'Puslapio naršymas',
       next: 'Kitas puslapis',
       previous: 'Ankstesnis puslapis',
-      page: 'Eiti ДЇ puslapДЇ {0}',
+      page: 'Eiti į puslapį {0}',
       currentPage: 'Dabartinis puslapis, puslapis {0}'
     }
   },
@@ -81522,50 +81522,50 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'ЕЅetons',
-  close: 'AizvД“rt',
+  badge: 'Žetons',
+  close: 'Aizvērt',
   dataIterator: {
     noResultsText: 'Nekas netika atrasts',
-    loadingText: 'IelДЃdД“...'
+    loadingText: 'Ielādē...'
   },
   dataTable: {
-    itemsPerPageText: 'RДЃdД«t lapДЃ:',
+    itemsPerPageText: 'Rādīt lapā:',
     ariaLabel: {
-      sortDescending: 'SakДЃrtots dilstoЕЎДЃ secД«bДЃ.',
-      sortAscending: 'SakДЃrtots augoЕЎДЃ secД«bДЃ.',
-      sortNone: 'Nav sakДЃrtots.',
-      activateNone: 'AktivizД“t, lai noЕ†emtu kДЃrtoЕЎanu.',
-      activateDescending: 'AktivizД“t, lai sakДЃrtotu dilstoЕЎДЃ secД«bДЃ.',
-      activateAscending: 'AktivizД“t, lai sakДЃrtotu augoЕЎДЃ secД«bДЃ.'
+      sortDescending: 'Sakārtots dilstošā secībā.',
+      sortAscending: 'Sakārtots augošā secībā.',
+      sortNone: 'Nav sakārtots.',
+      activateNone: 'Aktivizēt, lai noņemtu kārtošanu.',
+      activateDescending: 'Aktivizēt, lai sakārtotu dilstošā secībā.',
+      activateAscending: 'Aktivizēt, lai sakārtotu augošā secībā.'
     },
     sortBy: 'Sort by'
   },
   dataFooter: {
-    itemsPerPageText: 'RДЃdД«t lapДЃ:',
+    itemsPerPageText: 'Rādīt lapā:',
     itemsPerPageAll: 'Visu',
-    nextPage: 'NДЃkamДЃ lapa',
-    prevPage: 'IepriekЕЎД“jДЃ lapa',
-    firstPage: 'PirmДЃ lapa',
-    lastPage: 'PД“dД“jДЃ lapa',
+    nextPage: 'Nākamā lapa',
+    prevPage: 'Iepriekšējā lapa',
+    firstPage: 'Pirmā lapa',
+    lastPage: 'Pēdējā lapa',
     pageText: '{0}-{1} no {2}'
   },
   datePicker: {
-    itemsSelected: '{0} izvД“lД“ts',
-    nextMonthAriaLabel: 'NДЃkammД“nes',
-    nextYearAriaLabel: 'NДЃkamgad',
-    prevMonthAriaLabel: 'IepriekЕЎД“jais mД“nesis',
-    prevYearAriaLabel: 'IepriekЕЎД“jais gads'
+    itemsSelected: '{0} izvēlēts',
+    nextMonthAriaLabel: 'Nākammēnes',
+    nextYearAriaLabel: 'Nākamgad',
+    prevMonthAriaLabel: 'Iepriekšējais mēnesis',
+    prevYearAriaLabel: 'Iepriekšējais gads'
   },
   noDataText: 'Nav pieejamu datu',
   carousel: {
-    prev: 'IepriekЕЎД“jais slaids',
-    next: 'NДЃkamais slaids',
+    prev: 'Iepriekšējais slaids',
+    next: 'Nākamais slaids',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
   },
   calendar: {
-    moreEvents: 'VД“l {0}'
+    moreEvents: 'Vēl {0}'
   },
   fileInput: {
     counter: '{0} files',
@@ -81577,11 +81577,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'NavigДЃcija paginationДЃ',
-      next: 'NДЃkamДЃ lapa',
-      previous: 'IepriekЕЎД“jДЃ lapa',
+      wrapper: 'Navigācija paginationā',
+      next: 'Nākamā lapa',
+      previous: 'Iepriekšējā lapa',
       page: 'Iet uz lapu {0}',
-      currentPage: 'PaЕЎreizД“jДЃ lapa, lapa {0}'
+      currentPage: 'Pašreizējā lapa, lapa {0}'
     }
   },
   rating: {
@@ -81696,9 +81696,9 @@ __webpack_require__.r(__webpack_exports__);
       sortDescending: 'Sortert synkende.',
       sortAscending: 'Sortert stigende.',
       sortNone: 'Ikke sortert.',
-      activateNone: 'Aktiver for ГҐ fjerne sortering.',
-      activateDescending: 'Aktiver for ГҐ sortere synkende.',
-      activateAscending: 'Aktiver for ГҐ sortere stigende.'
+      activateNone: 'Aktiver for å fjerne sortering.',
+      activateDescending: 'Aktiver for å sortere synkende.',
+      activateAscending: 'Aktiver for å sortere stigende.'
     },
     sortBy: 'Sorter etter'
   },
@@ -81707,16 +81707,16 @@ __webpack_require__.r(__webpack_exports__);
     itemsPerPageAll: 'Alle',
     nextPage: 'Neste side',
     prevPage: 'Forrige side',
-    firstPage: 'FГёrste side',
+    firstPage: 'Første side',
     lastPage: 'Siste side',
     pageText: '{0}-{1} av {2}'
   },
   datePicker: {
     itemsSelected: '{0} valgt',
-    nextMonthAriaLabel: 'Neste mГҐned',
-    nextYearAriaLabel: 'Neste ГҐr',
-    prevMonthAriaLabel: 'Forrige mГҐned',
-    prevYearAriaLabel: 'Forrige ГҐr'
+    nextMonthAriaLabel: 'Neste måned',
+    nextYearAriaLabel: 'Neste år',
+    prevMonthAriaLabel: 'Forrige måned',
+    prevYearAriaLabel: 'Forrige år'
   },
   noDataText: 'Ingen data er tilgjengelig',
   carousel: {
@@ -81742,7 +81742,7 @@ __webpack_require__.r(__webpack_exports__);
       wrapper: 'Paginasjonsnavigasjon',
       next: 'Neste side',
       previous: 'Forrige side',
-      page: 'GГҐ til side {0}',
+      page: 'Gå til side {0}',
       currentPage: 'Gjeldende side, side {0}'
     }
   },
@@ -81768,25 +81768,25 @@ __webpack_require__.r(__webpack_exports__);
   badge: 'Odznaka',
   close: 'Zamknij',
   dataIterator: {
-    noResultsText: 'Nie znaleziono danych odpowiadajД…cych wyszukiwaniu',
+    noResultsText: 'Nie znaleziono danych odpowiadających wyszukiwaniu',
     loadingText: 'Wczytywanie danych...'
   },
   dataTable: {
     itemsPerPageText: 'Wierszy na stronie:',
     ariaLabel: {
-      sortDescending: 'Sortowanie malejД…co. Kliknij aby zmieniД‡.',
-      sortAscending: 'Sortowanie rosnД…co. Kliknij aby zmieniД‡.',
-      sortNone: 'Bez sortowania. Kliknij aby posortowaД‡ rosnД…co.',
-      activateNone: 'Kliknij aby usunД…Д‡ sortowanie.',
-      activateDescending: 'Kliknij aby posortowaД‡ malejД…co.',
-      activateAscending: 'Kliknij aby posortowaД‡ rosnД…co.'
+      sortDescending: 'Sortowanie malejąco. Kliknij aby zmienić.',
+      sortAscending: 'Sortowanie rosnąco. Kliknij aby zmienić.',
+      sortNone: 'Bez sortowania. Kliknij aby posortować rosnąco.',
+      activateNone: 'Kliknij aby usunąć sortowanie.',
+      activateDescending: 'Kliknij aby posortować malejąco.',
+      activateAscending: 'Kliknij aby posortować rosnąco.'
     },
-    sortBy: 'Sortuj wedЕ‚ug'
+    sortBy: 'Sortuj według'
   },
   dataFooter: {
     itemsPerPageText: 'Pozycji na stronie:',
     itemsPerPageAll: 'Wszystkie',
-    nextPage: 'NastД™pna strona',
+    nextPage: 'Następna strona',
     prevPage: 'Poprzednia strona',
     firstPage: 'Pierwsza strona',
     lastPage: 'Ostatnia strona',
@@ -81794,25 +81794,25 @@ __webpack_require__.r(__webpack_exports__);
   },
   datePicker: {
     itemsSelected: '{0} dat(y)',
-    nextMonthAriaLabel: 'NastД™pny miesiД…c',
-    nextYearAriaLabel: 'NastД™pny rok',
-    prevMonthAriaLabel: 'Poprzedni miesiД…c',
+    nextMonthAriaLabel: 'Następny miesiąc',
+    nextYearAriaLabel: 'Następny rok',
+    prevMonthAriaLabel: 'Poprzedni miesiąc',
     prevYearAriaLabel: 'Poprzedni rok'
   },
   noDataText: 'Brak danych',
   carousel: {
     prev: 'Poprzedni obraz',
-    next: 'NastД™pny obraz',
+    next: 'Następny obraz',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
   },
   calendar: {
-    moreEvents: '{0} wiД™cej'
+    moreEvents: '{0} więcej'
   },
   fileInput: {
-    counter: 'Liczba plikГіw: {0}',
-    counterSize: 'Liczba plikГіw: {0} (Е‚Д…cznie {1})'
+    counter: 'Liczba plików: {0}',
+    counterSize: 'Liczba plików: {0} (łącznie {1})'
   },
   timePicker: {
     am: 'AM',
@@ -81821,10 +81821,10 @@ __webpack_require__.r(__webpack_exports__);
   pagination: {
     ariaLabel: {
       wrapper: 'Nawigacja paginacyjna',
-      next: 'NastД™pna strona',
+      next: 'Następna strona',
       previous: 'Poprzednia strona',
-      page: 'IdЕє do strony {0}',
-      currentPage: 'BieЕјД…ca strona, strona {0}'
+      page: 'Idź do strony {0}',
+      currentPage: 'Bieżąca strona, strona {0}'
     }
   },
   rating: {
@@ -81853,37 +81853,37 @@ __webpack_require__.r(__webpack_exports__);
     loadingText: 'Carregando itens...'
   },
   dataTable: {
-    itemsPerPageText: 'Linhas por pГЎgina:',
+    itemsPerPageText: 'Linhas por página:',
     ariaLabel: {
       sortDescending: 'Ordenado decrescente.',
       sortAscending: 'Ordenado crescente.',
-      sortNone: 'NГЈo ordenado.',
-      activateNone: 'Ative para remover a ordenaГ§ГЈo.',
+      sortNone: 'Não ordenado.',
+      activateNone: 'Ative para remover a ordenação.',
       activateDescending: 'Ative para ordenar decrescente.',
       activateAscending: 'Ative para ordenar crescente.'
     },
     sortBy: 'Ordenar por'
   },
   dataFooter: {
-    itemsPerPageText: 'Itens por pГЎgina:',
+    itemsPerPageText: 'Itens por página:',
     itemsPerPageAll: 'Todos',
-    nextPage: 'PrГіxima pГЎgina',
-    prevPage: 'PГЎgina anterior',
-    firstPage: 'Primeira pГЎgina',
-    lastPage: 'Гљltima pГЎgina',
+    nextPage: 'Próxima página',
+    prevPage: 'Página anterior',
+    firstPage: 'Primeira página',
+    lastPage: 'Última página',
     pageText: '{0}-{1} de {2}'
   },
   datePicker: {
     itemsSelected: '{0} selecionado(s)',
-    nextMonthAriaLabel: 'PrГіximo mГЄs',
-    nextYearAriaLabel: 'PrГіximo ano',
-    prevMonthAriaLabel: 'MГЄs anterior',
+    nextMonthAriaLabel: 'Próximo mês',
+    nextYearAriaLabel: 'Próximo ano',
+    prevMonthAriaLabel: 'Mês anterior',
     prevYearAriaLabel: 'Ano anterior'
   },
-  noDataText: 'NГЈo hГЎ dados disponГ­veis',
+  noDataText: 'Não há dados disponíveis',
   carousel: {
-    prev: 'VisГЈo anterior',
-    next: 'PrГіxima visГЈo',
+    prev: 'Visão anterior',
+    next: 'Próxima visão',
     ariaLabel: {
       delimiter: 'Slide {0} de {1} do carrossel'
     }
@@ -81901,11 +81901,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'NavegaГ§ГЈo de paginaГ§ГЈo',
-      next: 'PrГіxima pГЎgina',
-      previous: 'PГЎgina anterior',
-      page: 'Ir Г  pГЎgina {0}',
-      currentPage: 'PГЎgina atual, pГЎgina {0}'
+      wrapper: 'Navegação de paginação',
+      next: 'Próxima página',
+      previous: 'Página anterior',
+      page: 'Ir à página {0}',
+      currentPage: 'Página atual, página {0}'
     }
   },
   rating: {
@@ -81927,14 +81927,14 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'InsignДѓ',
+  badge: 'Insignă',
   close: 'Close',
   dataIterator: {
-    noResultsText: 'Nu au fost gДѓsite Г®nregistrДѓri care sДѓ se potriveascДѓ',
+    noResultsText: 'Nu au fost găsite înregistrări care să se potrivească',
     loadingText: 'Loading item...'
   },
   dataTable: {
-    itemsPerPageText: 'RГўnduri pe paginДѓ:',
+    itemsPerPageText: 'Rânduri pe pagină:',
     ariaLabel: {
       sortDescending: 'Sorted descending.',
       sortAscending: 'Sorted ascending.',
@@ -81946,10 +81946,10 @@ __webpack_require__.r(__webpack_exports__);
     sortBy: 'Sort by'
   },
   dataFooter: {
-    itemsPerPageText: 'Articole pe paginДѓ:',
+    itemsPerPageText: 'Articole pe pagină:',
     itemsPerPageAll: 'Toate',
-    nextPage: 'Pagina urmДѓtoare',
-    prevPage: 'Pagina anterioarДѓ',
+    nextPage: 'Pagina următoare',
+    prevPage: 'Pagina anterioară',
     firstPage: 'Pagina prima',
     lastPage: 'Pagina ultima',
     pageText: '{0}-{1} din {2}'
@@ -81958,13 +81958,13 @@ __webpack_require__.r(__webpack_exports__);
     itemsSelected: '{0} selectate',
     nextMonthAriaLabel: 'Luna viitoare',
     nextYearAriaLabel: 'Anul urmator',
-    prevMonthAriaLabel: 'Luna trecutДѓ',
+    prevMonthAriaLabel: 'Luna trecută',
     prevYearAriaLabel: 'Anul precedent'
   },
-  noDataText: 'Nu existДѓ date disponibile',
+  noDataText: 'Nu există date disponibile',
   carousel: {
     prev: 'Anterior vizual',
-    next: 'UrmДѓtorul vizual',
+    next: 'Următorul vizual',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
@@ -81983,10 +81983,10 @@ __webpack_require__.r(__webpack_exports__);
   pagination: {
     ariaLabel: {
       wrapper: 'Navigare prin paginare',
-      next: 'Pagina urmДѓtoare',
-      previous: 'Pagina anterioarДѓ',
+      next: 'Pagina următoare',
+      previous: 'Pagina anterioară',
       page: 'Mergi la pagina {0}',
-      currentPage: 'Pagina curentДѓ, pagina {0}'
+      currentPage: 'Pagina curentă, pagina {0}'
     }
   },
   rating: {
@@ -82008,54 +82008,54 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'Р·РЅР°Рє',
-  close: 'Р—Р°РєСЂС‹С‚СЊ',
+  badge: 'знак',
+  close: 'Закрыть',
   dataIterator: {
-    noResultsText: 'РќРµ РЅР°Р№РґРµРЅРѕ РїРѕРґС…РѕРґСЏС‰РёС… Р·Р°РїРёСЃРµР№',
-    loadingText: 'Р—Р°РїРёСЃСЊ Р·Р°РіСЂСѓР¶Р°РµС‚СЃСЏ...'
+    noResultsText: 'Не найдено подходящих записей',
+    loadingText: 'Запись загружается...'
   },
   dataTable: {
-    itemsPerPageText: 'РЎС‚СЂРѕРє РЅР° СЃС‚СЂР°РЅРёС†Рµ:',
+    itemsPerPageText: 'Строк на странице:',
     ariaLabel: {
-      sortDescending: 'РЈРїРѕСЂСЏРґРѕС‡РµРЅРѕ РїРѕ СѓР±С‹РІР°РЅРёСЋ.',
-      sortAscending: 'РЈРїРѕСЂСЏРґРѕС‡РµРЅРѕ РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ.',
-      sortNone: 'РќРµ СѓРїРѕСЂСЏРґРѕС‡РµРЅРѕ.',
-      activateNone: 'РђРєС‚РёРІРёСЂСѓР№С‚Рµ, С‡С‚РѕР±С‹ СѓР±СЂР°С‚СЊ СЃРѕСЂС‚РёСЂРѕРІРєСѓ.',
-      activateDescending: 'РђРєС‚РёРІРёСЂСѓР№С‚Рµ РґР»СЏ СѓРїРѕСЂСЏРґРѕС‡РёРІР°РЅРёСЏ СѓР±С‹РІР°РЅРёСЋ.',
-      activateAscending: 'РђРєС‚РёРІРёСЂСѓР№С‚Рµ РґР»СЏ СѓРїРѕСЂСЏРґРѕС‡РёРІР°РЅРёСЏ РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ.'
+      sortDescending: 'Упорядочено по убыванию.',
+      sortAscending: 'Упорядочено по возрастанию.',
+      sortNone: 'Не упорядочено.',
+      activateNone: 'Активируйте, чтобы убрать сортировку.',
+      activateDescending: 'Активируйте для упорядочивания убыванию.',
+      activateAscending: 'Активируйте для упорядочивания по возрастанию.'
     },
-    sortBy: 'РЎРѕСЂС‚РёСЂРѕРІР°С‚СЊ РїРѕ'
+    sortBy: 'Сортировать по'
   },
   dataFooter: {
-    itemsPerPageText: 'Р—Р°РїРёСЃРµР№ РЅР° СЃС‚СЂР°РЅРёС†Рµ:',
-    itemsPerPageAll: 'Р’СЃРµ',
-    nextPage: 'РЎР»РµРґСѓСЋС‰Р°СЏ СЃС‚СЂР°РЅРёС†Р°',
-    prevPage: 'РџСЂРµРґС‹РґСѓС‰Р°СЏ СЃС‚СЂР°РЅРёС†Р°',
-    firstPage: 'РџРµСЂРІР°СЏ СЃС‚СЂР°РЅРёС†Р°',
-    lastPage: 'РџРѕСЃР»РµРґРЅСЏСЏ СЃС‚СЂР°РЅРёС†Р°',
-    pageText: '{0}-{1} РёР· {2}'
+    itemsPerPageText: 'Записей на странице:',
+    itemsPerPageAll: 'Все',
+    nextPage: 'Следующая страница',
+    prevPage: 'Предыдущая страница',
+    firstPage: 'Первая страница',
+    lastPage: 'Последняя страница',
+    pageText: '{0}-{1} из {2}'
   },
   datePicker: {
-    itemsSelected: '{0} РІС‹Р±СЂР°РЅ',
-    nextMonthAriaLabel: 'РЎР»РµРґСѓСЋС‰РёР№ РјРµСЃСЏС†',
-    nextYearAriaLabel: 'РЎР»РµРґСѓСЋС‰РёР№ РіРѕРґ',
-    prevMonthAriaLabel: 'РџСЂРѕС€Р»С‹Р№ РјРµСЃСЏС†',
-    prevYearAriaLabel: 'РџСЂРµРґС‹РґСѓС‰РёР№ РіРѕРґ'
+    itemsSelected: '{0} выбран',
+    nextMonthAriaLabel: 'Следующий месяц',
+    nextYearAriaLabel: 'Следующий год',
+    prevMonthAriaLabel: 'Прошлый месяц',
+    prevYearAriaLabel: 'Предыдущий год'
   },
-  noDataText: 'РћС‚СЃСѓС‚СЃС‚РІСѓСЋС‚ РґР°РЅРЅС‹Рµ',
+  noDataText: 'Отсутствуют данные',
   carousel: {
-    prev: 'РџСЂРµРґС‹РґСѓС‰РёР№ СЃР»Р°Р№Рґ',
-    next: 'РЎР»РµРґСѓСЋС‰РёР№ СЃР»Р°Р№Рґ',
+    prev: 'Предыдущий слайд',
+    next: 'Следующий слайд',
     ariaLabel: {
-      delimiter: 'РЎР»Р°Р№Рґ {0} РёР· {1}'
+      delimiter: 'Слайд {0} из {1}'
     }
   },
   calendar: {
-    moreEvents: 'Р•С‰Рµ {0}'
+    moreEvents: 'Еще {0}'
   },
   fileInput: {
-    counter: 'Р¤Р°Р№Р»РѕРІ: {0}',
-    counterSize: 'Р¤Р°Р№Р»РѕРІ: {0} (РІСЃРµРіРѕ {1})'
+    counter: 'Файлов: {0}',
+    counterSize: 'Файлов: {0} (всего {1})'
   },
   timePicker: {
     am: 'AM',
@@ -82063,11 +82063,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'РќР°РІРёРіР°С†РёСЏ РїРѕ СЃС‚СЂР°РЅРёС†Р°Рј',
-      next: 'РЎР»РµРґСѓСЋС‰Р°СЏ СЃС‚СЂР°РЅРёС†Р°',
-      previous: 'РџСЂРµРґС‹РґСѓС‰Р°СЏ СЃС‚СЂР°РЅРёС†Р°',
-      page: 'РџРµСЂРµР№С‚Рё РЅР° СЃС‚СЂР°РЅРёС†Сѓ {0}',
-      currentPage: 'РўРµРєСѓС‰Р°СЏ СЃС‚СЂР°РЅРёС†Р°, РЎС‚СЂР°РЅРёС†Р° {0}'
+      wrapper: 'Навигация по страницам',
+      next: 'Следующая страница',
+      previous: 'Предыдущая страница',
+      page: 'Перейти на страницу {0}',
+      currentPage: 'Текущая страница, Страница {0}'
     }
   },
   rating: {
@@ -82090,53 +82090,53 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   badge: 'Odznak',
-  close: 'ZavrieЕҐ',
+  close: 'Zavrieť',
   dataIterator: {
-    noResultsText: 'Neboli nГЎjdenГ© Еѕiadne zГЎznamy',
-    loadingText: 'NaДЌГ­tavam poloЕѕky...'
+    noResultsText: 'Neboli nájdené žiadne záznamy',
+    loadingText: 'Načítavam položky...'
   },
   dataTable: {
-    itemsPerPageText: 'PoДЌet riadkov na strГЎnku:',
+    itemsPerPageText: 'Počet riadkov na stránku:',
     ariaLabel: {
-      sortDescending: 'ZoradenГ© zostupne.',
-      sortAscending: 'ZoradenГ© vzostupne.',
-      sortNone: 'NezoradenГ©.',
-      activateNone: 'Aktivujte na zruЕЎenie triedenia.',
+      sortDescending: 'Zoradené zostupne.',
+      sortAscending: 'Zoradené vzostupne.',
+      sortNone: 'Nezoradené.',
+      activateNone: 'Aktivujte na zrušenie triedenia.',
       activateDescending: 'Aktivujte na zoradenie zostupne.',
       activateAscending: 'Aktivujte na zoradenie vzostupne.'
     },
-    sortBy: 'ZoradiЕҐ podДѕa'
+    sortBy: 'Zoradiť podľa'
   },
   dataFooter: {
-    itemsPerPageText: 'PoДЌet poloЕѕiek na strГЎnku:',
-    itemsPerPageAll: 'VЕЎetko',
-    nextPage: 'ДЋalЕЎia strГЎnka',
-    prevPage: 'PredchГЎdzajГєca strГЎnka',
-    firstPage: 'PrvГЎ strГЎnka',
-    lastPage: 'PoslednГЎ strГЎnka',
-    pageText: '{0}вЂ“{1} z {2}'
+    itemsPerPageText: 'Počet položiek na stránku:',
+    itemsPerPageAll: 'Všetko',
+    nextPage: 'Ďalšia stránka',
+    prevPage: 'Predchádzajúca stránka',
+    firstPage: 'Prvá stránka',
+    lastPage: 'Posledná stránka',
+    pageText: '{0}–{1} z {2}'
   },
   datePicker: {
-    itemsSelected: '{0} vybranГ©',
-    nextMonthAriaLabel: 'ДЋalЕЎГ­ mesiac',
-    nextYearAriaLabel: 'ДЋalЕЎГ­ rok',
-    prevMonthAriaLabel: 'PredchГЎdzajГєci mesiac',
-    prevYearAriaLabel: 'PredchГЎdzajГєci rok'
+    itemsSelected: '{0} vybrané',
+    nextMonthAriaLabel: 'Ďalší mesiac',
+    nextYearAriaLabel: 'Ďalší rok',
+    prevMonthAriaLabel: 'Predchádzajúci mesiac',
+    prevYearAriaLabel: 'Predchádzajúci rok'
   },
-  noDataText: 'Nie sГє dostupnГ© Еѕiadne dГЎta',
+  noDataText: 'Nie sú dostupné žiadne dáta',
   carousel: {
-    prev: 'PredchГЎdzajГєci obrГЎzok',
-    next: 'DalЕЎГ­ obrГЎzok',
+    prev: 'Predchádzajúci obrázok',
+    next: 'Další obrázok',
     ariaLabel: {
-      delimiter: 'SnГ­mka {0} z {1}'
+      delimiter: 'Snímka {0} z {1}'
     }
   },
   calendar: {
-    moreEvents: '{0} ДЏalЕЎГ­ch'
+    moreEvents: '{0} ďalších'
   },
   fileInput: {
-    counter: '{0} sГєborov',
-    counterSize: '{0} sГєborov ({1} celkom)'
+    counter: '{0} súborov',
+    counterSize: '{0} súborov ({1} celkom)'
   },
   timePicker: {
     am: 'AM',
@@ -82144,11 +82144,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'NavigГЎcia strГЎnkovania',
-      next: 'ДЋalЕЎia strГЎnka',
-      previous: 'PredchГЎdzajГєca strГЎnka',
-      page: 'ГЌsЕҐ na strГЎnku {0}',
-      currentPage: 'AktuГЎlna strГЎnka, strГЎnka {0}'
+      wrapper: 'Navigácia stránkovania',
+      next: 'Ďalšia stránka',
+      previous: 'Predchádzajúca stránka',
+      page: 'Ísť na stránku {0}',
+      currentPage: 'Aktuálna stránka, stránka {0}'
     }
   },
   rating: {
@@ -82170,7 +82170,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'ZnaДЌka',
+  badge: 'Značka',
   close: 'Zapri',
   dataIterator: {
     noResultsText: 'Ni iskanega zapisa',
@@ -82179,12 +82179,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Vrstic na stran:',
     ariaLabel: {
-      sortDescending: 'RazvrЕЎДЌeno padajoДЌe.',
-      sortAscending: 'RazvrЕЎДЌeno naraЕЎДЌajoДЌe.',
-      sortNone: 'Ni razvrЕЎДЌeno.',
-      activateNone: 'Aktivirajte za odstranitev razvrЕЎДЌanja.',
-      activateDescending: 'Aktivirajte za padajoДЌe razvrЕЎДЌanje.',
-      activateAscending: 'Aktivirajte za naraЕЎДЌajoДЌe razvrЕЎДЌanje.'
+      sortDescending: 'Razvrščeno padajoče.',
+      sortAscending: 'Razvrščeno naraščajoče.',
+      sortNone: 'Ni razvrščeno.',
+      activateNone: 'Aktivirajte za odstranitev razvrščanja.',
+      activateDescending: 'Aktivirajte za padajoče razvrščanje.',
+      activateAscending: 'Aktivirajte za naraščajoče razvrščanje.'
     },
     sortBy: 'Razvrsti po'
   },
@@ -82192,7 +82192,7 @@ __webpack_require__.r(__webpack_exports__);
     itemsPerPageText: 'Predmetov na stran:',
     itemsPerPageAll: 'Vse',
     nextPage: 'Naslednja stran',
-    prevPage: 'PrejЕЎnja stran',
+    prevPage: 'Prejšnja stran',
     firstPage: 'Prva stran',
     lastPage: 'Zadnja stran',
     pageText: '{0}-{1} od {2}'
@@ -82201,19 +82201,19 @@ __webpack_require__.r(__webpack_exports__);
     itemsSelected: '{0} izbrano/-ih',
     nextMonthAriaLabel: 'Naslednji mesec',
     nextYearAriaLabel: 'Naslednje leto',
-    prevMonthAriaLabel: 'PrejЕЎnji mesec',
-    prevYearAriaLabel: 'PrejЕЎnje leto'
+    prevMonthAriaLabel: 'Prejšnji mesec',
+    prevYearAriaLabel: 'Prejšnje leto'
   },
   noDataText: 'Ni podatkov',
   carousel: {
-    prev: 'PrejЕЎnji prikaz',
+    prev: 'Prejšnji prikaz',
     next: 'Naslednji prikaz',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
   },
   calendar: {
-    moreEvents: 'Е e {0}'
+    moreEvents: 'Še {0}'
   },
   fileInput: {
     counter: '{0} datotek',
@@ -82227,7 +82227,7 @@ __webpack_require__.r(__webpack_exports__);
     ariaLabel: {
       wrapper: 'Navigacija po strani po strani',
       next: 'Naslednja stran',
-      previous: 'PrejЕЎnja stran',
+      previous: 'Prejšnja stran',
       page: 'Pojdi na stran {0}',
       currentPage: 'Trenutna stran, stran {0}'
     }
@@ -82251,14 +82251,14 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'Р—РЅР°С‡РєР°',
+  badge: 'Значка',
   close: 'Close',
   dataIterator: {
-    noResultsText: 'РќРё С�РµРґР°РЅ Р·Р°РїРёСЃ РЅРёС�Рµ РїСЂРѕРЅР°С’РµРЅ',
+    noResultsText: 'Ни један запис није пронађен',
     loadingText: 'Loading item...'
   },
   dataTable: {
-    itemsPerPageText: 'Р РµРґРѕРІР° РїРѕ СЃС‚СЂР°РЅРёС†Рё:',
+    itemsPerPageText: 'Редова по страници:',
     ariaLabel: {
       sortDescending: 'Sorted descending.',
       sortAscending: 'Sorted ascending.',
@@ -82270,31 +82270,31 @@ __webpack_require__.r(__webpack_exports__);
     sortBy: 'Sort by'
   },
   dataFooter: {
-    itemsPerPageText: 'РЎС‚Р°РІРєРё РїРѕ СЃС‚СЂР°РЅРёС†Рё:',
-    itemsPerPageAll: 'РЎРІРµ',
-    nextPage: 'РЎР»РµРґРµС›Р° СЃС‚СЂР°РЅРёС†Р°',
-    prevPage: 'РџСЂРµС‚С…РѕРґРЅР° СЃС‚СЂР°РЅРёС†Р°',
-    firstPage: 'РџСЂРІР° СЃС‚СЂР°РЅРёС†Р°',
-    lastPage: 'РџРѕСЃР»РµРґСљР° СЃС‚СЂР°РЅРёС†Р°',
-    pageText: '{0}-{1} РѕРґ {2}'
+    itemsPerPageText: 'Ставки по страници:',
+    itemsPerPageAll: 'Све',
+    nextPage: 'Следећа страница',
+    prevPage: 'Претходна страница',
+    firstPage: 'Прва страница',
+    lastPage: 'Последња страница',
+    pageText: '{0}-{1} од {2}'
   },
   datePicker: {
-    itemsSelected: '{0} РѕРґР°Р±СЂР°РЅРѕ',
-    nextMonthAriaLabel: 'РЎР»РµРґРµС›РµРі РјРµСЃРµС†Р°',
-    nextYearAriaLabel: 'РЎР»РµРґРµС›Рµ РіРѕРґРёРЅРµ',
-    prevMonthAriaLabel: 'РџСЂРµС‚С…РѕРґРЅРё РјС�РµСЃРµС†',
-    prevYearAriaLabel: 'РџСЂРµС‚С…РѕРґРЅР° РіРѕРґРёРЅР°'
+    itemsSelected: '{0} одабрано',
+    nextMonthAriaLabel: 'Следећег месеца',
+    nextYearAriaLabel: 'Следеће године',
+    prevMonthAriaLabel: 'Претходни мјесец',
+    prevYearAriaLabel: 'Претходна година'
   },
-  noDataText: 'РќРµРјР° РґРѕСЃС‚СѓРїРЅРёС… РїРѕРґР°С‚Р°РєР°',
+  noDataText: 'Нема доступних података',
   carousel: {
-    prev: 'РџСЂРµРІРёРѕСѓСЃ РІРёСЃСѓР°Р»',
-    next: 'РќРµРєС‚ РІРёСЃСѓР°Р»',
+    prev: 'Превиоус висуал',
+    next: 'Нект висуал',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
   },
   calendar: {
-    moreEvents: '{0} РјРѕСЂРµ'
+    moreEvents: '{0} море'
   },
   fileInput: {
     counter: '{0} files',
@@ -82306,11 +82306,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'РќР°РІРёРіР°С†РёС�Р° СЃС‚СЂР°РЅРёС†Р°РјР°',
-      next: 'РЎР»РµРґРµС›Р° СЃС‚СЂР°РЅРёС†Р°',
-      previous: 'РџСЂРµС‚С…РѕРґРЅР° СЃС‚СЂР°РЅРёС†Р°',
-      page: 'Р�РґРё РЅР° СЃС‚СЂР°РЅСѓ {0}',
-      currentPage: 'РўСЂРµРЅСѓС‚РЅР° СЃС‚СЂР°РЅРёС†Р°, СЃС‚СЂР°РЅРёС†Р° {0}'
+      wrapper: 'Навигација страницама',
+      next: 'Следећа страница',
+      previous: 'Претходна страница',
+      page: 'Иди на страну {0}',
+      currentPage: 'Тренутна страница, страница {0}'
     }
   },
   rating: {
@@ -82333,7 +82333,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   badge: 'Bricka',
-  close: 'StГ¤ng',
+  close: 'Stäng',
   dataIterator: {
     noResultsText: 'Inga poster funna',
     loadingText: 'Laddar data...'
@@ -82344,32 +82344,32 @@ __webpack_require__.r(__webpack_exports__);
       sortDescending: 'Sorterat fallande.',
       sortAscending: 'Sorterat stigande.',
       sortNone: 'Osorterat.',
-      activateNone: 'Aktivera fГ¶r att ta bort sortering.',
-      activateDescending: 'Aktivera fГ¶r sortering fallande.',
-      activateAscending: 'Aktivera fГ¶r sortering stigande.'
+      activateNone: 'Aktivera för att ta bort sortering.',
+      activateDescending: 'Aktivera för sortering fallande.',
+      activateAscending: 'Aktivera för sortering stigande.'
     },
     sortBy: 'Sortera efter'
   },
   dataFooter: {
     itemsPerPageText: 'Objekt per sida:',
     itemsPerPageAll: 'Alla',
-    nextPage: 'NГ¤sta sida',
-    prevPage: 'FГ¶regГҐende sida',
-    firstPage: 'FГ¶rsta sidan',
+    nextPage: 'Nästa sida',
+    prevPage: 'Föregående sida',
+    firstPage: 'Första sidan',
     lastPage: 'Sista sidan',
     pageText: '{0}-{1} av {2}'
   },
   datePicker: {
     itemsSelected: '{0} markerade',
-    nextMonthAriaLabel: 'NГ¤sta mГҐnad',
-    nextYearAriaLabel: 'NГ¤sta ГҐr',
-    prevMonthAriaLabel: 'FГ¶rra mГҐnaden',
-    prevYearAriaLabel: 'FГ¶rra ГҐret'
+    nextMonthAriaLabel: 'Nästa månad',
+    nextYearAriaLabel: 'Nästa år',
+    prevMonthAriaLabel: 'Förra månaden',
+    prevYearAriaLabel: 'Förra året'
   },
-  noDataText: 'Ingen data tillgГ¤nglig',
+  noDataText: 'Ingen data tillgänglig',
   carousel: {
-    prev: 'FГ¶regГҐende vy',
-    next: 'NГ¤sta vy',
+    prev: 'Föregående vy',
+    next: 'Nästa vy',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
@@ -82388,9 +82388,9 @@ __webpack_require__.r(__webpack_exports__);
   pagination: {
     ariaLabel: {
       wrapper: 'Pagination Navigation',
-      next: 'NГ¤sta sida',
-      previous: 'FГ¶regГҐende sida',
-      page: 'GГҐ till sidan {0}',
+      next: 'Nästa sida',
+      previous: 'Föregående sida',
+      page: 'Gå till sidan {0}',
       currentPage: 'Aktuell sida, sida {0}'
     }
   },
@@ -82413,54 +82413,54 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'аёЄаё±аёЌаёҐаё±аёЃаё©аё“а№Њ',
-  close: 'аё›аёґаё”',
+  badge: 'สัญลักษณ์',
+  close: 'ปิด',
   dataIterator: {
-    noResultsText: 'а№„аёЎа№€аёћаёљаё‚а№‰аё­аёЎаё№аёҐаё—аёµа№€аё„а№‰аё™аё«аёІ',
-    loadingText: 'аёЃаёіаёҐаё±аё‡а№‚аё«аёҐаё”аё‚а№‰аё­аёЎаё№аёҐ...'
+    noResultsText: 'ไม่พบข้อมูลที่ค้นหา',
+    loadingText: 'กำลังโหลดข้อมูล...'
   },
   dataTable: {
-    itemsPerPageText: 'а№Ѓаё–аё§аё•а№€аё­аё«аё™а№‰аёІ:',
+    itemsPerPageText: 'แถวต่อหน้า:',
     ariaLabel: {
-      sortDescending: 'а№ЂаёЈаёµаёўаё‡аё€аёІаёЃаёЎаёІаёЃа№„аё›аё™а№‰аё­аёўаё­аёўаё№а№€',
-      sortAscending: 'а№ЂаёЈаёµаёўаё‡аё€аёІаёЃаё™а№‰аё­аёўа№„аё›аёЎаёІаёЃаё­аёўаё№а№€',
-      sortNone: 'а№„аёЎа№€а№„аё”а№‰а№ЂаёЈаёµаёўаё‡аёҐаёіаё”аё±аёљ',
-      activateNone: 'аёЃаё”а№Ђаёћаё·а№€аё­аё›аёґаё”аёЃаёІаёЈа№ЂаёЈаёµаёўаё‡аёҐаёіаё”аё±аёљ',
-      activateDescending: 'аёЃаё”а№Ђаёћаё·а№€аё­а№ЂаёЈаёµаёўаё‡аё€аёІаёЃаёЎаёІаёЃа№„аё›аё™а№‰аё­аёў',
-      activateAscending: 'аёЃаё”а№Ђаёћаё·а№€аё­а№ЂаёЈаёµаёўаё‡аё€аёІаёЃаё™а№‰аё­аёўа№„аё›аёЎаёІаёЃ'
+      sortDescending: 'เรียงจากมากไปน้อยอยู่',
+      sortAscending: 'เรียงจากน้อยไปมากอยู่',
+      sortNone: 'ไม่ได้เรียงลำดับ',
+      activateNone: 'กดเพื่อปิดการเรียงลำดับ',
+      activateDescending: 'กดเพื่อเรียงจากมากไปน้อย',
+      activateAscending: 'กดเพื่อเรียงจากน้อยไปมาก'
     },
-    sortBy: 'а№ЂаёЈаёµаёўаё‡аё•аёІаёЎ'
+    sortBy: 'เรียงตาม'
   },
   dataFooter: {
-    itemsPerPageText: 'аёЈаёІаёўаёЃаёІаёЈаё•а№€аё­аё«аё™а№‰аёІ:',
-    itemsPerPageAll: 'аё—аё±а№‰аё‡аё«аёЎаё”',
-    nextPage: 'аё«аё™а№‰аёІаё•а№€аё­а№„аё›',
-    prevPage: 'аё«аё™а№‰аёІаё—аёµа№€а№ЃаёҐа№‰аё§',
-    firstPage: 'аё«аё™а№‰аёІа№ЃаёЈаёЃ',
-    lastPage: 'аё«аё™а№‰аёІаёЄаёёаё”аё—а№‰аёІаёў',
-    pageText: '{0}-{1} аё€аёІаёЃ {2}'
+    itemsPerPageText: 'รายการต่อหน้า:',
+    itemsPerPageAll: 'ทั้งหมด',
+    nextPage: 'หน้าต่อไป',
+    prevPage: 'หน้าที่แล้ว',
+    firstPage: 'หน้าแรก',
+    lastPage: 'หน้าสุดท้าย',
+    pageText: '{0}-{1} จาก {2}'
   },
   datePicker: {
-    itemsSelected: 'а№ЂаёҐаё·аё­аёЃ {0} аё§аё±аё™',
-    nextMonthAriaLabel: 'а№Ђаё”аё·аё­аё™аё–аё±аё”а№„аё›',
-    nextYearAriaLabel: 'аё›аёµаё–аё±аё”а№„аё›',
-    prevMonthAriaLabel: 'а№Ђаё”аё·аё­аё™аёЃа№€аё­аё™аё«аё™а№‰аёІ',
-    prevYearAriaLabel: 'аё›аёµаёЃа№€аё­аё™аё«аё™а№‰аёІ'
+    itemsSelected: 'เลือก {0} วัน',
+    nextMonthAriaLabel: 'เดือนถัดไป',
+    nextYearAriaLabel: 'ปีถัดไป',
+    prevMonthAriaLabel: 'เดือนก่อนหน้า',
+    prevYearAriaLabel: 'ปีก่อนหน้า'
   },
-  noDataText: 'а№„аёЎа№€аёЎаёµаё‚а№‰аё­аёЎаё№аёҐ',
+  noDataText: 'ไม่มีข้อมูล',
   carousel: {
-    prev: 'аё аёІаёћаёЃа№€аё­аё™аё«аё™а№‰аёІ',
-    next: 'аё аёІаёћаё–аё±аё”а№„аё›',
+    prev: 'ภาพก่อนหน้า',
+    next: 'ภาพถัดไป',
     ariaLabel: {
-      delimiter: 'аё аёІаёћаёЄа№„аёҐаё”а№Њаё—аёµа№€ {0} аё€аёІаёЃ {1}'
+      delimiter: 'ภาพสไลด์ที่ {0} จาก {1}'
     }
   },
   calendar: {
-    moreEvents: 'аёЎаёµаё­аёµаёЃ {0}'
+    moreEvents: 'มีอีก {0}'
   },
   fileInput: {
-    counter: '{0} а№„аёџаёҐа№Њ',
-    counterSize: '{0} а№„аёџаёҐа№Њ (аёЈаё§аёЎ {1})'
+    counter: '{0} ไฟล์',
+    counterSize: '{0} ไฟล์ (รวม {1})'
   },
   timePicker: {
     am: 'AM',
@@ -82468,11 +82468,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'аёЃаёІаёЈаё™аёіаё—аёІаё‡а№„аё›аёўаё±аё‡аё«аё™а№‰аёІ',
-      next: 'аё«аё™а№‰аёІаё•а№€аё­а№„аё›',
-      previous: 'аё«аё™а№‰аёІаё—аёµа№€а№ЃаёҐа№‰аё§',
-      page: 'а№„аё›аё—аёµа№€аё«аё™а№‰аёІ {0}',
-      currentPage: 'аё«аё™а№‰аёІаё›аё±аё€аё€аёёаёљаё±аё™ (аё«аё™а№‰аёІ {0})'
+      wrapper: 'การนำทางไปยังหน้า',
+      next: 'หน้าต่อไป',
+      previous: 'หน้าที่แล้ว',
+      page: 'ไปที่หน้า {0}',
+      currentPage: 'หน้าปัจจุบัน (หน้า {0})'
     }
   },
   rating: {
@@ -82497,41 +82497,41 @@ __webpack_require__.r(__webpack_exports__);
   badge: 'rozet',
   close: 'Kapat',
   dataIterator: {
-    noResultsText: 'EЕџleЕџen veri bulunamadД±',
-    loadingText: 'YГјkleniyor... LГјtfen bekleyin.'
+    noResultsText: 'Eşleşen veri bulunamadı',
+    loadingText: 'Yükleniyor... Lütfen bekleyin.'
   },
   dataTable: {
-    itemsPerPageText: 'Sayfa baЕџД±na satД±r:',
+    itemsPerPageText: 'Sayfa başına satır:',
     ariaLabel: {
-      sortDescending: 'Z den A ya sД±ralД±.',
-      sortAscending: 'A dan Z ye sД±ralД±.',
-      sortNone: 'SД±ralД± deДџil. ',
-      activateNone: 'SД±ralamayД± kaldД±rmak iГ§in etkinleЕџtir.',
-      activateDescending: 'Z den A ya sД±ralamak iГ§in etkinleЕџtir.',
-      activateAscending: 'A dan Z ye sД±ralamak iГ§in etkinleЕџtir.'
+      sortDescending: 'Z den A ya sıralı.',
+      sortAscending: 'A dan Z ye sıralı.',
+      sortNone: 'Sıralı değil. ',
+      activateNone: 'Sıralamayı kaldırmak için etkinleştir.',
+      activateDescending: 'Z den A ya sıralamak için etkinleştir.',
+      activateAscending: 'A dan Z ye sıralamak için etkinleştir.'
     },
-    sortBy: 'SД±rala'
+    sortBy: 'Sırala'
   },
   dataFooter: {
-    itemsPerPageText: 'Sayfa baЕџД±na satД±r:',
+    itemsPerPageText: 'Sayfa başına satır:',
     itemsPerPageAll: 'Hepsi',
     nextPage: 'Sonraki sayfa',
-    prevPage: 'Г–nceki sayfa',
-    firstPage: 'Д°lk sayfa',
+    prevPage: 'Önceki sayfa',
+    firstPage: 'İlk sayfa',
     lastPage: 'Son sayfa',
-    pageText: '{0} - {1} arasД±, Toplam: {2} kayД±t'
+    pageText: '{0} - {1} arası, Toplam: {2} kayıt'
   },
   datePicker: {
-    itemsSelected: '{0} Г¶ge seГ§ildi',
+    itemsSelected: '{0} öge seçildi',
     nextMonthAriaLabel: 'Gelecek ay',
-    nextYearAriaLabel: 'Gelecek yД±l',
-    prevMonthAriaLabel: 'GeГ§tiДџimiz ay',
-    prevYearAriaLabel: 'GeГ§en yД±l'
+    nextYearAriaLabel: 'Gelecek yıl',
+    prevMonthAriaLabel: 'Geçtiğimiz ay',
+    prevYearAriaLabel: 'Geçen yıl'
   },
-  noDataText: 'Bu gГ¶rГјnГјmde veri yok.',
+  noDataText: 'Bu görünümde veri yok.',
   carousel: {
-    prev: 'Г–nceki gГ¶rsel',
-    next: 'Sonraki gГ¶rsel',
+    prev: 'Önceki görsel',
+    next: 'Sonraki görsel',
     ariaLabel: {
       delimiter: 'Galeri sayfa {0} / {1}'
     }
@@ -82549,11 +82549,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'SayfalandД±rma Navigasyonu',
+      wrapper: 'Sayfalandırma Navigasyonu',
       next: 'Sonraki sayfa',
-      previous: 'Г–nceki sayfa',
+      previous: 'Önceki sayfa',
       page: 'Sayfaya git {0}',
-      currentPage: 'GeГ§erli Sayfa, Sayfa {0}'
+      currentPage: 'Geçerli Sayfa, Sayfa {0}'
     }
   },
   rating: {
@@ -82575,54 +82575,54 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'Р—РЅР°Рє',
-  close: 'Р—Р°РєСЂРёС‚Рё',
+  badge: 'Знак',
+  close: 'Закрити',
   dataIterator: {
-    noResultsText: 'Р’ СЂРµР·СѓР»СЊС‚Р°С‚С– РїРѕС€СѓРєСѓ РЅС–С‡РѕРіРѕ РЅРµ Р·РЅР°Р№РґРµРЅРѕ',
-    loadingText: 'Р—Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ...'
+    noResultsText: 'В результаті пошуку нічого не знайдено',
+    loadingText: 'Завантаження...'
   },
   dataTable: {
-    itemsPerPageText: 'Р СЏРґРєС–РІ РЅР° СЃС‚РѕСЂС–РЅС†С–:',
+    itemsPerPageText: 'Рядків на сторінці:',
     ariaLabel: {
-      sortDescending: 'Р’С–РґСЃРѕСЂС‚РѕРІР°РЅРѕ Р·Р° СЃРїР°РґР°РЅРЅСЏРј.',
-      sortAscending: 'Р’С–РґСЃРѕСЂС‚РѕРІР°РЅРѕ Р·Р° Р·СЂРѕСЃС‚Р°РЅРЅСЏРј.',
-      sortNone: 'РќРµ РІС–РґСЃРѕСЂС‚РѕРІР°РЅРѕ.',
-      activateNone: 'РђРєС‚РёРІСѓРІР°С‚Рё, С‰РѕР± РІРёРґР°Р»РёС‚Рё СЃРѕСЂС‚СѓРІР°РЅРЅСЏ.',
-      activateDescending: 'РђРєС‚РёРІСѓРІР°С‚Рё, С‰РѕР± РІС–РґСЃРѕСЂС‚СѓРІР°С‚Рё Р·Р° СЃРїР°РґР°РЅРЅСЏРј.',
-      activateAscending: 'РђРєС‚РёРІСѓРІР°С‚Рё, С‰РѕР± РІС–РґСЃРѕСЂС‚СѓРІР°С‚Рё Р·Р° Р·СЂРѕСЃС‚Р°РЅРЅСЏРј.'
+      sortDescending: 'Відсортовано за спаданням.',
+      sortAscending: 'Відсортовано за зростанням.',
+      sortNone: 'Не відсортовано.',
+      activateNone: 'Активувати, щоб видалити сортування.',
+      activateDescending: 'Активувати, щоб відсортувати за спаданням.',
+      activateAscending: 'Активувати, щоб відсортувати за зростанням.'
     },
-    sortBy: 'Р’С–РґСЃРѕСЂС‚СѓРІР°С‚Рё Р·Р°'
+    sortBy: 'Відсортувати за'
   },
   dataFooter: {
-    itemsPerPageText: 'Р•Р»РµРјРµРЅС‚С–РІ РЅР° СЃС‚РѕСЂС–РЅС†С–:',
-    itemsPerPageAll: 'Р’СЃС–',
-    nextPage: 'РќР°СЃС‚СѓРїРЅР° СЃС‚РѕСЂС–РЅРєР°',
-    prevPage: 'РџРѕРїРµСЂРµРґРЅСЏ СЃС‚РѕСЂС–РЅРєР°',
-    firstPage: 'РџРµСЂС€Р° СЃС‚РѕСЂС–РЅРєР°',
-    lastPage: 'РћСЃС‚Р°РЅРЅСЏ СЃС‚РѕСЂС–РЅРєР°',
-    pageText: '{0}-{1} Р· {2}'
+    itemsPerPageText: 'Елементів на сторінці:',
+    itemsPerPageAll: 'Всі',
+    nextPage: 'Наступна сторінка',
+    prevPage: 'Попередня сторінка',
+    firstPage: 'Перша сторінка',
+    lastPage: 'Остання сторінка',
+    pageText: '{0}-{1} з {2}'
   },
   datePicker: {
-    itemsSelected: '{0} РІРёР±СЂР°РЅРѕ',
-    nextMonthAriaLabel: 'РќР°СЃС‚СѓРїРЅРѕРіРѕ РјС–СЃСЏС†СЏ',
-    nextYearAriaLabel: 'РќР°СЃС‚СѓРїРЅРѕРіРѕ СЂРѕРєСѓ',
-    prevMonthAriaLabel: 'РџРѕРїРµСЂРµРґРЅС–Р№ РјС–СЃСЏС†СЊ',
-    prevYearAriaLabel: 'РџРѕРїРµСЂРµРґРЅС–Р№ СЂС–Рє'
+    itemsSelected: '{0} вибрано',
+    nextMonthAriaLabel: 'Наступного місяця',
+    nextYearAriaLabel: 'Наступного року',
+    prevMonthAriaLabel: 'Попередній місяць',
+    prevYearAriaLabel: 'Попередній рік'
   },
-  noDataText: 'РќРµРјР°С” РґР°РЅРёС… РґР»СЏ РІС–РґРѕР±СЂР°Р¶РµРЅРЅСЏ',
+  noDataText: 'Немає даних для відображення',
   carousel: {
-    prev: 'РџРѕРїРµСЂРµРґРЅС–Р№ СЃР»Р°Р№Рґ',
-    next: 'РќР°СЃС‚СѓРїРёР№ СЃР»Р°Р№Рґ',
+    prev: 'Попередній слайд',
+    next: 'Наступий слайд',
     ariaLabel: {
-      delimiter: 'РЎР»Р°Р№Рґ {0} Р· {1}'
+      delimiter: 'Слайд {0} з {1}'
     }
   },
   calendar: {
-    moreEvents: 'Р©Рµ {0}'
+    moreEvents: 'Ще {0}'
   },
   fileInput: {
-    counter: '{0} С„Р°Р№Р»С–РІ',
-    counterSize: '{0} С„Р°Р№Р»С–РІ ({1} Р·Р°РіР°Р»РѕРј)'
+    counter: '{0} файлів',
+    counterSize: '{0} файлів ({1} загалом)'
   },
   timePicker: {
     am: 'AM',
@@ -82630,11 +82630,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'РќР°РІС–РіР°С†С–СЏ РїРѕ СЃС‚РѕСЂС–РЅРєР°С…',
-      next: 'РќР°СЃС‚СѓРїРЅР° СЃС‚РѕСЂС–РЅРєР°',
-      previous: 'РџРѕРїРµСЂРµРґРЅСЏ СЃС‚РѕСЂС–РЅРєР°',
-      page: 'РџРµСЂРµР№С‚Рё РЅР° СЃС‚РѕСЂС–РЅРєСѓ {0}',
-      currentPage: 'РџРѕС‚РѕС‡РЅР° СЃС‚РѕСЂС–РЅРєР°, РЎС‚РѕСЂС–РЅРєР° {0}'
+      wrapper: 'Навігація по сторінках',
+      next: 'Наступна сторінка',
+      previous: 'Попередня сторінка',
+      page: 'Перейти на сторінку {0}',
+      currentPage: 'Поточна сторінка, Сторінка {0}'
     }
   },
   rating: {
@@ -82656,54 +82656,54 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'еѕЅз« ',
-  close: 'е…ій—­',
+  badge: '徽章',
+  close: '关闭',
   dataIterator: {
-    noResultsText: 'жІЎжњ‰з¬¦еђ€жќЎд»¶зљ„з»“жћњ',
-    loadingText: 'еЉ иЅЅдё­вЂ¦вЂ¦'
+    noResultsText: '没有符合条件的结果',
+    loadingText: '加载中……'
   },
   dataTable: {
-    itemsPerPageText: 'жЇЏйЎµж•°з›®пјљ',
+    itemsPerPageText: '每页数目：',
     ariaLabel: {
-      sortDescending: 'пјљй™ЌеєЏжЋ’е€—гЂ‚',
-      sortAscending: 'пјљеЌ‡еєЏжЋ’е€—гЂ‚',
-      sortNone: 'пјљжњЄжЋ’еєЏгЂ‚',
-      activateNone: 'з‚№е‡»д»Ґз§»й™¤жЋ’еєЏгЂ‚',
-      activateDescending: 'з‚№е‡»д»Ґй™ЌеєЏжЋ’е€—гЂ‚',
-      activateAscending: 'з‚№е‡»д»ҐеЌ‡еєЏжЋ’е€—гЂ‚'
+      sortDescending: '：降序排列。',
+      sortAscending: '：升序排列。',
+      sortNone: '：未排序。',
+      activateNone: '点击以移除排序。',
+      activateDescending: '点击以降序排列。',
+      activateAscending: '点击以升序排列。'
     },
-    sortBy: 'жЋ’еєЏж–№ејЏ'
+    sortBy: '排序方式'
   },
   dataFooter: {
-    itemsPerPageText: 'жЇЏйЎµж•°з›®пјљ',
-    itemsPerPageAll: 'е…ЁйѓЁ',
-    nextPage: 'дё‹дёЂйЎµ',
-    prevPage: 'дёЉдёЂйЎµ',
-    firstPage: 'й¦–йЎµ',
-    lastPage: 'е°ѕйЎµ',
-    pageText: '{0}-{1} е…± {2}'
+    itemsPerPageText: '每页数目：',
+    itemsPerPageAll: '全部',
+    nextPage: '下一页',
+    prevPage: '上一页',
+    firstPage: '首页',
+    lastPage: '尾页',
+    pageText: '{0}-{1} 共 {2}'
   },
   datePicker: {
-    itemsSelected: 'е·ІйЂ‰ж‹© {0}',
-    nextMonthAriaLabel: 'дё‹дёЄжњ€',
-    nextYearAriaLabel: 'ж�Ће№ґ',
-    prevMonthAriaLabel: 'е‰ЌдёЂдёЄжњ€',
-    prevYearAriaLabel: 'е‰ЌдёЂе№ґ'
+    itemsSelected: '已选择 {0}',
+    nextMonthAriaLabel: '下个月',
+    nextYearAriaLabel: '明年',
+    prevMonthAriaLabel: '前一个月',
+    prevYearAriaLabel: '前一年'
   },
-  noDataText: 'жІЎжњ‰ж•°жЌ®',
+  noDataText: '没有数据',
   carousel: {
-    prev: 'дёЉдёЂеј ',
-    next: 'дё‹дёЂеј ',
+    prev: '上一张',
+    next: '下一张',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
   },
   calendar: {
-    moreEvents: 'иї�жњ‰ {0} йЎ№'
+    moreEvents: '还有 {0} 项'
   },
   fileInput: {
-    counter: '{0} дёЄж–‡д»¶',
-    counterSize: '{0} дёЄж–‡д»¶пј€е…± {1}пј‰'
+    counter: '{0} 个文件',
+    counterSize: '{0} 个文件（共 {1}）'
   },
   timePicker: {
     am: 'AM',
@@ -82711,11 +82711,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'е€†йЎµеЇји€Є',
-      next: 'дё‹дёЂйЎµ',
-      previous: 'дёЉдёЂйЎµ',
-      page: 'иЅ¬е€°йЎµйќў {0}',
-      currentPage: 'еЅ“е‰ЌйЎµ {0}'
+      wrapper: '分页导航',
+      next: '下一页',
+      previous: '上一页',
+      page: '转到页面 {0}',
+      currentPage: '当前页 {0}'
     }
   },
   rating: {
@@ -82737,54 +82737,54 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  badge: 'еѕЅз« ',
-  close: 'й—њй–‰',
+  badge: '徽章',
+  close: '關閉',
   dataIterator: {
-    noResultsText: 'жІ’жњ‰з¬¦еђ€жўќд»¶зљ„зµђжћњ',
-    loadingText: 'и®ЂеЏ–дё­...'
+    noResultsText: '沒有符合條件的結果',
+    loadingText: '讀取中...'
   },
   dataTable: {
-    itemsPerPageText: 'жЇЏй Ѓе€—ж•ёпјљ',
+    itemsPerPageText: '每頁列數：',
     ariaLabel: {
-      sortDescending: 'пјљй™ЌеєЏжЋ’е€—гЂ‚',
-      sortAscending: 'пјљеЌ‡еєЏжЋ’е€—гЂ‚',
-      sortNone: 'з„ЎжЋ’еєЏж–№ејЏгЂ‚й»ћж“Љд»ҐеЌ‡еєЏжЋ’е€—гЂ‚',
-      activateNone: 'й»ћж“Љд»Ґз§»й™¤жЋ’еєЏж–№ејЏгЂ‚',
-      activateDescending: 'й»ћж“Љд»Ґй™ЌеєЏжЋ’е€—гЂ‚',
-      activateAscending: 'й»ћж“Љд»Ґз§»й™¤жЋ’еєЏж–№ејЏгЂ‚'
+      sortDescending: '：降序排列。',
+      sortAscending: '：升序排列。',
+      sortNone: '無排序方式。點擊以升序排列。',
+      activateNone: '點擊以移除排序方式。',
+      activateDescending: '點擊以降序排列。',
+      activateAscending: '點擊以移除排序方式。'
     },
-    sortBy: 'жЋ’еєЏж–№ејЏ'
+    sortBy: '排序方式'
   },
   dataFooter: {
-    itemsPerPageText: 'жЇЏй Ѓй …з›®пјљ',
-    itemsPerPageAll: 'е…ЁйѓЁ',
-    nextPage: 'дё‹дёЂй Ѓ',
-    prevPage: 'дёЉдёЂй Ѓ',
-    firstPage: 'з¬¬дёЂй Ѓ',
-    lastPage: 'жњЂеѕЊй Ѓ',
-    pageText: '{2} жўќдё­зљ„ {0}~{1} жўќ'
+    itemsPerPageText: '每頁項目：',
+    itemsPerPageAll: '全部',
+    nextPage: '下一頁',
+    prevPage: '上一頁',
+    firstPage: '第一頁',
+    lastPage: '最後頁',
+    pageText: '{2} 條中的 {0}~{1} 條'
   },
   datePicker: {
-    itemsSelected: 'е·ІйЃёж“‡ {0}',
-    nextMonthAriaLabel: 'дё‹еЂ‹жњ€',
-    nextYearAriaLabel: 'ж�Ће№ґ',
-    prevMonthAriaLabel: 'е‰ЌдёЂеЂ‹жњ€',
-    prevYearAriaLabel: 'е‰ЌдёЂе№ґ'
+    itemsSelected: '已選擇 {0}',
+    nextMonthAriaLabel: '下個月',
+    nextYearAriaLabel: '明年',
+    prevMonthAriaLabel: '前一個月',
+    prevYearAriaLabel: '前一年'
   },
-  noDataText: 'жІ’жњ‰иі‡ж–™',
+  noDataText: '沒有資料',
   carousel: {
-    prev: 'дёЉдёЂејµ',
-    next: 'дё‹дёЂејµ',
+    prev: '上一張',
+    next: '下一張',
     ariaLabel: {
       delimiter: 'Carousel slide {0} of {1}'
     }
   },
   calendar: {
-    moreEvents: 'й‚„жњ‰е…¶д»– {0} й …'
+    moreEvents: '還有其他 {0} 項'
   },
   fileInput: {
-    counter: '{0} еЂ‹жЄ”жЎ€',
-    counterSize: '{0} еЂ‹жЄ”жЎ€пј€е…± {1}пј‰'
+    counter: '{0} 個檔案',
+    counterSize: '{0} 個檔案（共 {1}）'
   },
   timePicker: {
     am: 'AM',
@@ -82792,11 +82792,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   pagination: {
     ariaLabel: {
-      wrapper: 'е€†й Ѓе°Ћи€Є',
-      next: 'дё‹дёЂй Ѓ',
-      previous: 'дёЉдёЂй Ѓ',
-      page: 'иЅ‰е€°й Ѓйќў {0}',
-      currentPage: 'з•¶е‰Ќй Ѓ {0}'
+      wrapper: '分頁導航',
+      next: '下一頁',
+      previous: '上一頁',
+      page: '轉到頁面 {0}',
+      currentPage: '當前頁 {0}'
     }
   },
   rating: {
@@ -88314,7 +88314,7 @@ function darken(value, amount) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fromXYZ", function() { return fromXYZ; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toXYZ", function() { return toXYZ; });
-var delta = 0.20689655172413793; // 6Г·29
+var delta = 0.20689655172413793; // 6÷29
 
 var cielabForwardTransform = function cielabForwardTransform(t) {
   return t > Math.pow(delta, 3) ? Math.cbrt(t) : t / (3 * Math.pow(delta, 2)) + 4 / 29;
