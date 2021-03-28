@@ -1,10 +1,11 @@
-.env
-.env.local
-/app/data
 /node_modules
+/public/hot
+/public/storage
 /storage/*.key
-/.idea
-/.vagrant
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
 Homestead.json
 Homestead.yaml
 npm-debug.log

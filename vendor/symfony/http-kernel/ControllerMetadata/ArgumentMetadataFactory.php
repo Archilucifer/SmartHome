@@ -11,6 +11,9 @@
 
 namespace Symfony\Component\HttpKernel\ControllerMetadata;
 
+use Symfony\Component\HttpKernel\Attribute\ArgumentInterface;
+use Symfony\Component\HttpKernel\Exception\InvalidMetadataException;
+
 /**
  * Builds {@see ArgumentMetadata} objects based on the given Controller.
  *
@@ -19,33 +22,9 @@ namespace Symfony\Component\HttpKernel\ControllerMetadata;
 final class ArgumentMetadataFactory implements ArgumentMetadataFactoryInterface
 {
     /**
-     * If the ...$arg functionality is available.
-     *
-     * Requires at least PHP 5.6.0 or HHVM 3.9.1
-     *
-     * @var bool
-     */
-    private $supportsVariadic;
-
-    /**
-     * If the reflection supports the getType() method to resolve types.
-     *
-     * Requires at least PHP 7.0.0 or HHVM 3.11.0
-     *
-     * @var bool
-     */
-    private $supportsParameterType;
-
-    public function __construct()
-    {
-        $this->supportsVariadic = method_exists('ReflectionParameter', 'isVariadic');
-        $this->supportsParameterType = method_exists('ReflectionParameter', 'getType');
-    }
-
-    /**
      * {@inheritdoc}
      */
-    public function createArgumentMetadata($controller)
+    public function createArgumentMetadata($controller): array
     {
         $arguments = [];
 
@@ -58,78 +37,53 @@ final class ArgumentMetadataFactory implements ArgumentMetadataFactoryInterface
         }
 
         foreach ($reflection->getParameters() as $param) {
-            $arguments[] = new ArgumentMetadata($param->getName(), $this->getType($param, $reflection), $this->isVariadic($param), $this->hasDefaultValue($param), $this->getDefaultValue($param), $param->allowsNull());
+            $attribute = null;
+            if (\PHP_VERSION_ID >= 80000) {
+                $reflectionAttributes = $param->getAttributes(ArgumentInterface::class, \ReflectionAttribute::IS_INSTANCEOF);
+
+                if (\count($reflectionAttributes) > 1) {
+                    $representative = $controller;
+
+                    if (\is_array($representative)) {
+                        $representative = sprintf('%s::%s()', \get_class($representative[0]), $representative[1]);
+                    } elseif (\is_object($representative)) {
+                        $representative = \get_class($representative);
+                    }
+
+                    throw new InvalidMetadataException(sprintf('Controller "%s" has more than one attribute for "$%s" argument.', $representative, $param->getName()));
+                }
+
+                if (isset($reflectionAttributes[0])) {
+                    $attribute = $reflectionAttributes[0]->newInstance();
+                }
+            }
+
+            $arguments[] = new ArgumentMetadata($param->getName(), $this->getType($param, $reflection), $param->isVariadic(), $param->isDefaultValueAvailable(), $param->isDefaultValueAvailable() ? $param->getDefaultValue() : null, $param->allowsNull(), $attribute);
         }
 
         return $arguments;
     }
 
     /**
-     * Returns whether an argument is variadic.
-     *
-     * @return bool
-     */
-    private function isVariadic(\ReflectionParameter $parameter)
-    {
-        return $this->supportsVariadic && $parameter->isVariadic();
-    }
-
-    /**
-     * Determines whether an argument has a default value.
-     *
-     * @return bool
-     */
-    private function hasDefaultValue(\ReflectionParameter $parameter)
-    {
-        return $parameter->isDefaultValueAvailable();
-    }
-
-    /**
-     * Returns a default value if available.
-     *
-     * @return mixed|null
-     */
-    private function getDefaultValue(\ReflectionParameter $parameter)
-    {
-        return $this->hasDefaultValue($parameter) ? $parameter->getDefaultValue() : null;
-    }
-
-    /**
      * Returns an associated type to the given parameter if available.
-     *
-     * @return string|null
      */
-    private function getType(\ReflectionParameter $parameter, \ReflectionFunctionAbstract $function)
+    private function getType(\ReflectionParameter $parameter, \ReflectionFunctionAbstract $function): ?string
     {
-        if ($this->supportsParameterType) {
-            if (!$type = $parameter->getType()) {
-                return null;
-            }
-            $name = $type instanceof \ReflectionNamedType ? $type->getName() : (string) $type;
-            if ('array' === $name && !$type->isBuiltin()) {
-                // Special case for HHVM with variadics
-                return null;
-            }
-        } elseif (preg_match('/^(?:[^ ]++ ){4}([a-zA-Z_\x7F-\xFF][^ ]++)/', $parameter, $name)) {
-            $name = $name[1];
-        } else {
+        if (!$type = $parameter->getType()) {
             return null;
         }
-        $lcName = strtolower($name);
+        $name = $type instanceof \ReflectionNamedType ? $type->getName() : (string) $type;
 
-        if ('self' !== $lcName && 'parent' !== $lcName) {
-            return $name;
-        }
-        if (!$function instanceof \ReflectionMethod) {
-            return null;
-        }
-        if ('self' === $lcName) {
-            return $function->getDeclaringClass()->name;
-        }
-        if ($parent = $function->getDeclaringClass()->getParentClass()) {
-            return $parent->name;
+        if ($function instanceof \ReflectionMethod) {
+            $lcName = strtolower($name);
+            switch ($lcName) {
+                case 'self':
+                    return $function->getDeclaringClass()->name;
+                case 'parent':
+                    return ($parent = $function->getDeclaringClass()->getParentClass()) ? $parent->name : null;
+            }
         }
 
-        return null;
+        return $name;
     }
 }
