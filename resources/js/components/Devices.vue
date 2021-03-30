@@ -273,7 +273,7 @@
             scan() {
                 this.dialog = true
                 axios
-                    .get('http://127.0.0.1:8000/scan/' + this.homeId)
+                    .post('devices/scan/' + this.homeId)
                     .then(response => (this.localDevices = response.data), this.dialog = false, this.dialog2 = true)
             },
             addDevice(device){

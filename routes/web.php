@@ -28,4 +28,4 @@ Route::post('rooms/roomCreate/{id}', 'RoomController@roomCreate')->name('roomCre
 
 Route::get('/devices', 'DeviceController@index')->name('device');
 Route::post('/deviceCreate', 'DeviceController@deviceCreate')->name('deviceCreate');
-Route::get('/scan/{homeId}', 'DeviceController@scan')->name('deviceScan');
+Route::post('devices/scan/{homeId}', 'DeviceController@scan')->name('deviceScan');

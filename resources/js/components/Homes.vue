@@ -51,7 +51,7 @@
                                     v-model="checkbox"
                                     label=" Main home ?"
                                     :value="checkbox"
-                                    name="isMain"
+                                    name="main"
                                     required
                                     on-icon="fas fa-check-square"
                                     off-icon="far fa-square"

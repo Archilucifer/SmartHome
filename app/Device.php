@@ -2,9 +2,15 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Device
+ * @package App
+ * @mixin Builder
+ */
 class Device extends Model
 {
     /**
