@@ -2,9 +2,15 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Home
+ * @package App
+ * @mixin Builder
+ */
 class Home extends Model
 {
     /**
@@ -13,7 +19,7 @@ class Home extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'type', 'owner',
+        'name', 'type', 'owner','main'
     ];
 
     public $timestamps = false;
@@ -29,14 +35,14 @@ class Home extends Model
 
     /**
      * @param int $user_id
-     * @return mixed
+     * @return array
      */
-    public function getMainHomeByUserId(int $user_id)
+    public function getMainHomeByUserId(int $user_id): array
     {
         return $this->select('id')
             ->where('owner',$user_id)
             ->where('main',true)
             ->get()
-            ->toArray()[0]['id'];
+            ->toArray();
     }
 }

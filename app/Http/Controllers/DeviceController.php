@@ -44,16 +44,20 @@ class DeviceController extends Controller
     {
         $userId = auth()->user()->id;
 
-        $mainHome = $this->home->getMainHomeByUserId($userId);
+        $mainHomes = $this->home->getMainHomeByUserId($userId);
 
-        $devices = $this->device->getDevicesIpByHomeId($mainHome);
-        $homes = $this->home->select(['id','name'])->where('owner', $userId)->get()->toArray();
-        $rooms = [];
-        foreach ($homes as $home){
-            $rooms[$home['id']] = $this->room->select(['id','name'])->where('home', $home['id'])->get()->toArray();
+        if (empty($mainHomes)) {
+            return view('device',['data'=>[], 'homeId'=>'', 'rooms'=>[], 'homes'=>[]]);
         }
+            $mainHomeId = $mainHomes[0]['id'];
+            $devices = $this->device->getDevicesIpByHomeId($mainHomeId);
+            $homes = $this->home->getHomesByUserId($userId);
+            $rooms = [];
+            foreach ($homes as $home) {
+                $rooms[$home['id']] = $this->room->getRoomsByHomeId($home['id']);
+            }
 
-        return view('device',['data'=>$devices, 'homeId'=>$mainHome, 'rooms'=>$rooms, 'homes'=>$homes]);
+        return view('device',['data'=>$devices, 'homeId'=>$mainHomeId, 'rooms'=>$rooms, 'homes'=>$homes]);
     }
 
     /**
