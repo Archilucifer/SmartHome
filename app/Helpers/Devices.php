@@ -37,7 +37,7 @@ class Devices
         $hostname = shell_exec('sudo hostname -I');
         $localIps = explode(
             "\n",
-            shell_exec(sprintf('sudo nmap - sP \'%s\'/24 | grep - oE \'\b[0-9]{1,3}(\.[0-9]{1,3}){3}\b\'', $hostname)));
+            shell_exec(sprintf('sudo nmap -sP %s/24 | grep -oE \'\b[0-9]{1,3}(\.[0-9]{1,3}){3}\b\'', $hostname)));
 
         $devices = [];
         if (!empty($localIps[0])) {
