@@ -29,23 +29,30 @@ class Devices
         $this->device = $device;
     }
 
-    public function getLocalDevices(int $home_id)
+    /**
+     * @param int $home_id
+     * @return array|array[]
+     */
+    public function getLocalDevices(int $home_id): array
     {
         $roomsIds = $this->room->select(['id'])->where('home', $home_id)->get()->toArray();
         $registeredDevicesIp = $this->device->select(['ip'])->where('room', 'in', $roomsIds)->get()->toArray();
 
         $hostname = shell_exec('sudo hostname -I');
+        $bash = sprintf('sudo nmap -sP %s/24 | grep -oE \'\b[0-9]{1,3}(\.[0-9]{1,3}){3}\b\'', trim($hostname));
         $localIps = explode(
             "\n",
-            shell_exec(sprintf('sudo nmap -sP %s/24 | grep -oE \'\b[0-9]{1,3}(\.[0-9]{1,3}){3}\b\'', $hostname)));
+            shell_exec($bash)
+        );
 
         $devices = [];
+
         if (!empty($localIps[0])) {
             foreach ($localIps as $ip) {
                 if (!in_array($ip, $registeredDevicesIp, true)) {
-                    $ch = curl_init($ip.'/login/');
+                    $ch = curl_init((string) $ip);
                     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-                    $response = curl_exec($ch);
+                    $response = json_decode(curl_exec($ch), true);
                     if (is_array($response)){
                         $response['ip'] = $ip;
                         $devices[][] = $response;
