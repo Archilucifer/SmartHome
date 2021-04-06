@@ -34,7 +34,7 @@
                         color="purple darken-2"
                         @click="scan()"
                     >
-                        Scan for devices
+                       scan
                     </v-btn>
                 </v-col>
                 <v-col
@@ -95,7 +95,7 @@
                     <v-card-text>
                         <v-row>
                             <v-col
-                                v-for="(device, index) in localDevices"
+                                v-for="(device) in localDevices"
                                 v-if="device.name"
                             >
                                 <v-menu
@@ -116,7 +116,7 @@
                                                 v-bind:class="device.icon_class">
                                             </i>
                                         </v-btn>
-                                        <span bottom>{{device.name}}</span>
+                                        <span>{{device.name}}</span>
                                     </template>
                                     <v-card>
                                         <v-list-item-content class="justify-center">
@@ -224,7 +224,7 @@
             csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
             dialog: false,
             dialog2: false,
-            localDevices: '',
+            localDevices: [],
             closeOnContentClick: false,
             valid: true,
             homeFromSelect: null,
@@ -280,7 +280,7 @@
                 const options = {
                     headers: {'X-CSRF-TOKEN': this.csrf}
                 };
-                axios.post('devices/deviceCreate', {
+                axios.post('deviceCreate', {
                     ip: device.ip,
                     name: device.name,
                     icon_class: device.icon_class,
