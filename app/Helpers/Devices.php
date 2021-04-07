@@ -53,7 +53,7 @@ class Devices
                 if (!in_array($ip, $registeredDevicesIp, true)) {
                     $ch = curl_init((string) $ip);
                     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-                    $response = json_decode(curl_exec($ch), true, 512, JSON_THROW_ON_ERROR);
+                    $response = json_decode(curl_exec($ch), true);
                     if (is_array($response)){
                         $response['ip'] = $ip;
                         $devices[] = $response;
