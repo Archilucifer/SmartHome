@@ -280,7 +280,7 @@
                 const options = {
                     headers: {'X-CSRF-TOKEN': this.csrf}
                 };
-                axios.post('deviceCreate', {
+                axios.post('/deviceCreate', {
                     ip: device.ip,
                     name: device.name,
                     icon_class: device.icon_class,
