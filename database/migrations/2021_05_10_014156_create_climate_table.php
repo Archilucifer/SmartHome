@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateClimateTable extends Migration
 {
-    private const TABLE_NAME = 'climate';
+    private const TABLE_NAME = 'climates';
 
     /**
      * @return void

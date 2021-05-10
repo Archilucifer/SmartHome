@@ -54,6 +54,6 @@ class WelcomeController extends Controller
     {
         $climate = new Climate();
         $data = $climate->select(['name', 'temp', 'humidity'])->get()->toArray();
-        return response()->json(['data' => ['name'=>'floor1','temp'=>32,'humidity'=>'50%']], 200);
+        return response()->json(['data' => $data], 200);
     }
 }

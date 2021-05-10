@@ -1,5 +1,4 @@
 <template>
-    <v-app id="inspire">
         <v-main>
             <v-container>
                 <v-row>
@@ -10,12 +9,9 @@
                         <v-card>
                             <v-list-item-content>
                                 <div class=" text-center">
-                                    <span class="headline">{{ climateData }}</span>
-                                    <span class="headline">adafgag</span>
-                                    <h3>{{ climate.temp }}</h3>
-                                    <p class="caption mt-1">
-                                        {{ climate.humidity }}
-                                    </p>
+                                    <span class="headline">{{ climate.name }}</span>
+                                    <h3>Temp: {{ climate.temp }}</h3>
+                                    <h3>Humidity: {{ climate.humidity }}%</h3>
                                 </div>
                             </v-list-item-content>
                         </v-card>
@@ -23,7 +19,6 @@
                 </v-row>
             </v-container>
         </v-main>
-    </v-app>
 </template>
 
 <script>
@@ -34,7 +29,7 @@
         }),
         created: function () {
             this.fetchEventsList();
-            this.timer = setInterval(this.fetchEventsList, 500)
+            this.timer = setInterval(this.fetchEventsList, 5000)
         },
         methods: {
             fetchEventsList: function () {
