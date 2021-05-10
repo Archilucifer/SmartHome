@@ -21,4 +21,5 @@ class Climate extends Model
         'name', 'temp', 'humidity'
     ];
 
+    public $timestamps = false;
 }

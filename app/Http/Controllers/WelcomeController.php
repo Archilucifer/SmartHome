@@ -12,14 +12,6 @@ use Illuminate\View\View;
 class WelcomeController extends Controller
 {
     /**
-     * WelcomeController constructor.
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-    /**
      * Show the application dashboard.
      *
      * @return Factory|Application|View
@@ -36,16 +28,15 @@ class WelcomeController extends Controller
     public function getClimateDate(Request $request)
     {
         $params = $request->all();
-
         $climate = new Climate();
 
-        $climateModel = $climate->select(['id'])->where('name', $params['name'])->get()[0];
-        if ($climateModel !== null){
-            $climateModel->update($params);
-            $climateModel->save();
+        $climateModel = $climate->select(['id'])->where('name', $params['name'])->get();
+        if (!$climateModel->isEmpty()){
+            $climateModel[0]->update($params);
+            $climateModel[0]->save();
             return true;
         }
-        $climateModel->create($params);
+        $climate->create($params);
 
         return true;
     }

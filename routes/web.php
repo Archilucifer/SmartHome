@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'WelcomeController@index')->name('welcome');
 Route::post('/getFormatedClimateData', 'WelcomeController@getFormatedClimateData');
-Route::post('/getClimateDate', 'WelcomeController@getClimateDate');
+Route::post('/getClimateDate', 'WelcomeController@getClimateDate')->name('climate');
 
 Auth::routes();
 
