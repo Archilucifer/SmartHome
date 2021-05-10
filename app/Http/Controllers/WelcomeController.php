@@ -28,6 +28,7 @@ class WelcomeController extends Controller
     public function getClimateDate(Request $request)
     {
         $params = $request->all();
+
         $climate = new Climate();
 
         $climateModel = $climate->select(['id'])->where('name', $params['name'])->get();
@@ -44,7 +45,6 @@ class WelcomeController extends Controller
     public function getFormatedClimateData()
     {
         $climate = new Climate();
-        $data = $climate->select(['name', 'temp', 'humidity'])->get()->toArray();
-        return response()->json(['data' => $data], 200);
+        return$climate->select(['name', 'temp', 'humidity'])->get()->toArray();
     }
 }

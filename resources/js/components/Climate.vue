@@ -3,7 +3,7 @@
             <v-container>
                 <v-row>
                     <v-col
-                        cols="2"
+                        width="auto"
                         v-for="(climate, index) in climateData"
                     >
                         <v-card>
